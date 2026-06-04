@@ -1,323 +1,221 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mariam Alharbi builds technology ventures, learning communities, and future digital solutions.">
-  <title>Mariam Alharbi | Founder, Builder, Innovator</title>
+  <meta name="description" content="مريم الحربي مؤسسة وصانعة تقنية تبني مشاريع رقمية ومجتمعات تعليمية وتجربة ذكاء اصطناعي شخصية للمستقبل.">
+  <title>Mariam Alharbi | Founder Journey 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
-  <nav class="nav">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top"><span>+</span> Mariam Alharbi</a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#projects" data-i18n="navProjects">Ventures</a>
-        <a href="#communities" data-i18n="navCommunities">Communities</a>
-        <a href="#vision" data-i18n="navVision">Vision</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </div>
-      <div class="nav-actions">
-        <button class="lang-switch" id="langSwitch" aria-label="Switch language">العربية <span>|</span> EN</button>
-        <a class="nav-cta" href="#mariam-ai" data-i18n="askAI">Ask Mariam AI</a>
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
-      </div>
+  <a class="skip" href="#main" data-i18n="skip">تجاوز إلى المحتوى</a>
+  <div class="stars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="scroll-mariam" id="walker" aria-hidden="true">
+    <img src="assets/images/profile-photo.jpg" alt="">
+  </div>
+
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#top"><span>✤</span> Mariam Alharbi ✨</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#journey" data-i18n="navJourney">الرحلة</a>
+      <a href="#experience" data-i18n="navExperience">الخبرات</a>
+      <a href="#leadership" data-i18n="navLeadership">القيادة</a>
+      <a href="#mariam-ai" data-i18n="navAi">Mariam AI</a>
+      <a href="#future" data-i18n="navFuture">المستقبل</a>
+      <a href="#contact" data-i18n="navContact">تواصل</a>
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">EN</button>
     </div>
   </nav>
 
   <header class="hero" id="top">
-    <div class="container hero-grid">
-      <div class="hero-content fade-up">
-        <div class="hero-role" data-i18n="heroRole">Founder · Builder · Community Creator</div>
-        <h1>Mariam<br><em>Alharbi</em></h1>
-        <div class="hero-subtitle" data-i18n="heroTitle">Cybersecurity &amp; Healthcare AI</div>
-        <p class="hero-copy" data-i18n="heroCopy">Building technology ventures, learning communities, and future digital solutions.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects"><span data-i18n="explore">Explore My Journey</span> <b>↓</b></a>
-          <a class="button button-gold" href="#mariam-ai"><span data-i18n="askAI">Ask Mariam AI</span> <b>✦</b></a>
-          <a class="button button-outline" href="#" id="cvButton"><span data-i18n="downloadCV">Download CV</span> <b>↗</b></a>
-        </div>
-      </div>
-      <div class="portrait-wrap fade-up">
-        <img class="portrait" src="assets/images/profile-photo.jpg" onerror="this.onerror=null;this.src='assets/images/mariam-founder-placeholder.png';" alt="Portrait of Mariam Alharbi" fetchpriority="high">
-        <div class="portrait-note"><b>Mariam Alharbi</b><span data-i18n="portraitNote">Founder Profile · 2026</span></div>
-      </div>
+    <div class="hero-scene" aria-hidden="true">
+      <img src="assets/images/founder-hero-scene.png" alt="">
+      <div class="scene-orbit"></div>
+      <div class="hello-bubble" data-i18n="heroBubble">مرحبًا بك في رحلة مريم ✨</div>
     </div>
-    <div class="container hero-bottom">
-      <p data-i18n="heroBottom">Building with purpose. Learning with curiosity.</p>
-      <p class="scroll-note"><i></i><span data-i18n="scroll">Scroll to discover</span></p>
+    <div class="hero-content reveal">
+      <p class="eyebrow" data-i18n="heroHello">أهلًا بك</p>
+      <h1 data-i18n="heroTitle">أنا مريم الحربي</h1>
+      <p class="hero-belief" data-i18n="heroBelief">أؤمن أن التقنية تصنع أثرًا حقيقيًا.</p>
+      <p class="hero-lead" data-i18n="heroLead">أبني مشاريع تقنية ومجتمعات تعليمية وحلولًا رقمية للمستقبل.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold magnetic" href="#mariam-ai" data-i18n="askAI">اسأل مريم AI</a>
+        <a class="btn btn-glass magnetic" href="#journey" data-i18n="exploreProjects">استكشف المشاريع</a>
+      </div>
+      <button class="voice-strip magnetic" id="voiceHero" type="button">
+        <span>🎙</span>
+        <strong data-i18n="voiceTitle">التجربة الصوتية قريبًا</strong>
+        <small data-i18n="voiceSmall">قريبًا ستتمكن من التحدث مع Mariam AI بالصوت.</small>
+      </button>
     </div>
+    <div class="scroll-cue" data-i18n="scrollCue">اسحب للاستكشاف</div>
   </header>
 
   <main id="main">
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-kicker fade-up" data-i18n="aboutKicker">02 · About Mariam</div>
-        <div class="about-grid">
-          <h2 class="about-quote fade-up" data-i18n="aboutQuote">“Technology becomes meaningful when it is built around people, progress, and possibility.”</h2>
-          <div class="about-content fade-up">
-            <p data-i18n="aboutP1">Mariam Alharbi is a technology builder shaping a multidisciplinary path across cybersecurity, healthcare AI, and information systems. Her work is grounded in a practical belief: meaningful digital solutions begin with a deep understanding of people and the systems around them.</p>
-            <p data-i18n="aboutP2">Alongside product concepts and future ventures, she creates learning communities that make knowledge easier to explore, apply, and share. Her evolving portfolio reflects a founder mindset: curious, intentional, and committed to building ideas that can grow into lasting value.</p>
-            <div class="mini-values">
-              <div><b>05</b><span data-i18n="disciplines">Core disciplines</span></div>
-              <div><b>09</b><span data-i18n="ventures">Venture ideas</span></div>
-              <div><b>03</b><span data-i18n="communities">Communities</span></div>
-            </div>
+    <section class="journey section" id="journey">
+      <div class="section-head reveal">
+        <h2 data-i18n="journeyTitle">الرحلة تبدأ من هنا ✨</h2>
+      </div>
+      <div class="project-showcase journey-cards">
+        <article class="project-card reveal">
+          <div class="project-number">1</div>
+          <div class="project-art robot"><span>AI</span></div>
+          <div class="project-meta">
+            <h3>Mariam AI</h3>
+            <em>Prototype</em>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section connections">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="connectKicker">03 · The throughline</div>
-          <h2 class="section-heading" data-i18n="connectTitle">How everything connects.</h2>
-          <p class="section-copy" data-i18n="connectCopy">Different disciplines. One vision: building thoughtful digital products with the technical depth, system thinking, and human perspective to create real value.</p>
-        </div>
-        <div class="pathway fade-up">
-          <div class="path-step"><span class="path-num">01</span><h3 data-i18n="cybersecurity">Cybersecurity</h3></div>
-          <div class="path-step"><span class="path-num">02</span><h3 data-i18n="healthcare">Healthcare AI</h3></div>
-          <div class="path-step"><span class="path-num">03</span><h3 data-i18n="information">Information Systems</h3></div>
-          <div class="path-step"><span class="path-num">04</span><h3 data-i18n="software">Software Development</h3></div>
-          <div class="path-step"><span class="path-num">05</span><h3 data-i18n="design">UX &amp; Graphic Design</h3></div>
-          <div class="path-step"><span class="path-num">06</span><h3 data-i18n="entrepreneurship">Entrepreneurship</h3></div>
-        </div>
-        <div class="path-summary fade-up"><i></i><p data-i18n="connectEnd">Together, these areas support one evolving founder journey.</p></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="focusKicker">04 · Capabilities</div>
-          <h2 class="section-heading" data-i18n="focusTitle">Focus areas.</h2>
-        </div>
-        <div class="focus-grid fade-up">
-          <article class="focus-card"><div class="focus-icon">01</div><h3 data-i18n="cybersecurity">Cybersecurity</h3><p data-i18n="focusOne">Secure by design</p></article>
-          <article class="focus-card"><div class="focus-icon">02</div><h3 data-i18n="healthcare">Healthcare AI</h3><p data-i18n="focusTwo">Human-centered intelligence</p></article>
-          <article class="focus-card"><div class="focus-icon">03</div><h3 data-i18n="software">Software Development</h3><p data-i18n="focusThree">Ideas into systems</p></article>
-          <article class="focus-card"><div class="focus-icon">04</div><h3 data-i18n="design">UX &amp; Graphic Design</h3><p data-i18n="focusFour">Clarity through design</p></article>
-          <article class="focus-card"><div class="focus-icon">05</div><h3 data-i18n="information">Information Systems</h3><p data-i18n="focusFive">Connected thinking</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section directory" id="projects">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="projectKicker">Projects &amp; Ventures</div>
-          <h2 class="section-heading" data-i18n="projectTitle">Projects &amp; ventures.</h2>
-          <p class="section-copy" data-i18n="projectCopy">Each project is intentionally presented with a short public description. Some details remain private while the ideas evolve, the identity grows, and the vision becomes stronger.</p>
-        </div>
-        <div class="venture-group fade-up">
-          <h3 class="venture-group-heading" data-i18n="currentProjects">Building Now projects</h3>
-          <div class="venture-card-grid">
-            <article class="venture-card"><span class="venture-number">01</span><div class="venture-mark accent-gold"><span class="venture-monogram">R</span></div><h3>Ruqi</h3><p data-i18n="ruqiShort">First brand venture currently in development, focused on building a refined identity and customer experience.</p><span class="venture-status" data-i18n="current">Current project</span></article>
-            <article class="venture-card"><span class="venture-number">02</span><div class="venture-mark accent-green"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><path d="M13 46c8-2 13-8 16-18 3 8 7 13 12 15 4-10 8-17 13-21"/><path d="m47 18 7 4-2 8M18 17l2 4 4 2-4 2-2 4-2-4-4-2 4-2Z"/></svg></div><h3>Step by Mira</h3><p data-i18n="stepShort">A digital product exploration journey: observe, analyze, improve, and reimagine better experiences.</p><span class="venture-status" data-i18n="current">Current project</span></article>
-            <article class="venture-card"><span class="venture-number">03</span><div class="venture-mark accent-purple"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><rect x="15" y="18" width="34" height="28" rx="8"/><path d="M32 11v7M24 29h.01M40 29h.01M23 38c6 3 12 3 18 0"/><path d="m50 13 2 4 4 2-4 2-2 4-2-4-4-2 4-2Z"/></svg></div><h3>Mariam AI</h3><p data-i18n="mariamAiShort">Personal AI assistant designed to introduce my journey, projects, communities, and future vision.</p><span class="venture-status" data-i18n="current">Current project</span></article>
-            <article class="venture-card"><span class="venture-number">04</span><div class="venture-mark accent-beige"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><path d="M10 15h44v34H10zM10 23h44M17 19h1M22 19h1M27 19h1"/><path d="m23 42 7-8 6 5 6-8"/></svg></div><h3 data-i18n="personalWebsite">Personal Website</h3><p data-i18n="websiteShort">A living digital space documenting my growth, work, learning journey, and future plans.</p><span class="venture-status" data-i18n="current">Current project</span></article>
+          <p data-i18n="pMariamAi">نموذج أولي يسمح بالتعرف على مريم ومشاريعها واهتماماتها من خلال محادثة ذكية.</p>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">2</div>
+          <div class="project-art steps"><span>↗</span></div>
+          <div class="project-meta">
+            <h3>Step by Mira</h3>
+            <em>In Development</em>
           </div>
-        </div>
-        <div class="venture-group fade-up">
-          <h3 class="venture-group-heading" data-i18n="visionProjects">Vision projects</h3>
-          <div class="venture-card-grid">
-            <article class="venture-card"><span class="venture-number">05</span><div class="venture-mark accent-purple"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><path d="M15 48V33h12v15M27 48V23h12v25M39 48V14h12v34"/><path d="m15 25 11-8 10 3 14-10M44 10h6v6"/></svg></div><h3>Muhayya</h3><p data-i18n="muhayyaShort">A long-term vision project recognized through Monsha’at and continuously evolving.</p><span class="venture-status" data-i18n="visionProject">Vision project</span></article>
-            <article class="venture-card"><span class="venture-number">06</span><div class="venture-mark accent-sage"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><path d="M32 55s19-9 19-26V14L32 8l-19 6v15c0 17 19 26 19 26Z"/><path d="M24 37c5-2 7-6 8-12 2 6 4 10 8 12"/><path d="M25 42h14"/></svg></div><h3 data-i18n="warmth">Smart Warmth Guardian</h3><p data-i18n="warmthShort">An accepted innovation concept with future development plans and a stronger upcoming vision.</p><span class="venture-status" data-i18n="visionProject">Vision project</span></article>
+          <p data-i18n="pStep">منصة تعليمية تساعد الأفراد على التقدم خطوة بخطوة في رحلتهم المهنية والتقنية.</p>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">3</div>
+          <div class="project-art future"><span>?</span></div>
+          <div class="project-meta">
+            <h3 data-i18n="pFutureTitle">Future Venture</h3>
+            <em>Coming Soon</em>
           </div>
-        </div>
-        <div class="venture-group fade-up">
-          <h3 class="venture-group-heading" data-i18n="futureVentures">Future ventures</h3>
-          <div class="venture-card-grid">
-            <article class="venture-card"><span class="venture-number">07</span><div class="venture-mark accent-rose"><span class="venture-monogram">Q</span></div><h3>Q</h3><p data-i18n="qShort">A future brand currently under long-term development. More details will be shared at the right time.</p><span class="venture-status" data-i18n="future">Future venture</span></article>
-            <article class="venture-card"><span class="venture-number">08</span><div class="venture-mark accent-blue"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><rect x="20" y="9" width="24" height="46" rx="4"/><path d="M28 15h8M29 49h6"/><path d="M27 38c5-1 8-4 10-9M33 27h6v6"/></svg></div><h3>Tamam</h3><p data-i18n="tamamShort">A future digital venture currently under strategic development.</p><span class="venture-status" data-i18n="future">Future venture</span></article>
-            <article class="venture-card"><span class="venture-number">09</span><div class="venture-mark accent-gold"><svg aria-hidden="true" viewBox="0 0 64 64" fill="none"><path d="M32 55s19-9 19-26V14L32 8l-19 6v15c0 17 19 26 19 26Z"/><path d="m23 31 6 6 13-14"/></svg></div><h3>Hami</h3><p data-i18n="hamiShort">A future digital venture currently under strategic development.</p><span class="venture-status" data-i18n="future">Future venture</span></article>
+          <p data-i18n="pFuture">المشروع القادم قيد التطوير. التفاصيل سيتم الإعلان عنها لاحقًا.</p>
+        </article>
+      </div>
+      <p class="journey-note reveal" data-i18n="journeyNote">الرحلة مستمرة... وانتظروا القادم.</p>
+    </section>
+
+    <section class="dashboard section" id="experience">
+      <div class="dash-grid">
+        <article class="dash-panel experience-panel reveal">
+          <div class="panel-title"><span>💼</span><h2 data-i18n="experienceTitle">الخبرات المهنية</h2></div>
+          <div class="timeline">
+            <article class="exp-card">
+              <div class="company-mark awe-mark">AWE</div>
+              <div class="exp-copy">
+                <div class="exp-head"><h3>AWE</h3><time>18/08/2024 - 18/10/2024</time></div>
+                <strong data-i18n="dataEntry">Data Entry</strong>
+                <p data-i18n="aweCopy">إدخال البيانات بدقة، تنظيمها، ودعم سير العمل بكفاءة.</p>
+              </div>
+            </article>
+            <article class="exp-card">
+              <div class="company-mark hospital-mark">YH</div>
+              <div class="exp-copy">
+                <div class="exp-head"><h3>Yanbu General Hospital</h3><time>29/06/2025 - 15/08/2025</time></div>
+                <strong data-i18n="reception">Reception Trainee</strong>
+                <p data-i18n="hospitalCopy">تجربة داخل بيئة صحية لفهم سير العمل وخدمة المستفيدين.</p>
+              </div>
+            </article>
           </div>
-        </div>
+        </article>
+
+        <article class="dash-panel leadership-panel reveal" id="leadership">
+          <div class="panel-title"><span>🦋</span><h2 data-i18n="leadershipTitle">التطوع والقيادة</h2></div>
+          <div class="leadership-list">
+            <article class="lead-card"><span>🤲</span><h3 data-i18n="basmahTitle">منصة بصمة</h3><p data-i18n="basmahCopy">مشاركة تطوعية في مبادرات إنسانية ومجتمعية متنوعة.</p></article>
+            <article class="lead-card"><span>👥</span><h3 data-i18n="eventsTitle">تنظيم الفعاليات</h3><p data-i18n="eventsCopy">تنظيم العمل، خدمة الزوار، ومساندة الفرق في الفعاليات.</p></article>
+            <article class="lead-card"><span>🚀</span><h3 data-i18n="volunteerTitle">الأعمال التطوعية</h3><p data-i18n="volunteerCopy">مشرفة فريق التنظيم في إحدى الفعاليات التاريخية التي تم تنظيمها من قبل بصمة.</p></article>
+          </div>
+        </article>
+
+        <article class="dash-panel ai-panel-card reveal" id="mariam-ai">
+          <div class="ai-card-head">
+            <h2>Mariam AI ✨</h2>
+            <em>Prototype</em>
+          </div>
+          <p data-i18n="aiPrototype">النموذج الأولي الحالي. وسيتم تطويره مستقبلًا ليشمل الصوت والصورة والتفاعل المباشر.</p>
+          <div class="chip-list" data-i18n-list="chips">
+            <button class="question" type="button" data-topic="who">✨ من هي مريم الحربي؟</button>
+            <button class="question" type="button" data-topic="step">✨ وش هي خطوة ميرا؟</button>
+            <button class="question" type="button" data-topic="projects">✨ وش مشاريعك؟</button>
+            <button class="question" type="button" data-topic="cybersecurity">✨ ليش الأمن السيبراني؟</button>
+            <button class="question" type="button" data-topic="future">✨ وش رؤيتك المستقبلية؟</button>
+            <button class="question" type="button" data-topic="healthcare">✨ ليش الذكاء الاصطناعي الصحي؟</button>
+          </div>
+          <div class="ai-response" id="aiResponse" aria-live="polite" data-i18n="aiDefault">اكتب سؤالك هنا أو اختر أحد الاقتراحات.</div>
+          <form class="ai-form" id="aiForm">
+            <input id="aiQuestion" type="text" autocomplete="off" aria-label="Ask Mariam AI" placeholder="اكتب سؤالك هنا..." required>
+            <button class="send-btn" type="submit" aria-label="Send">➤</button>
+          </form>
+        </article>
+      </div>
+
+      <div class="stats-strip reveal" aria-label="Founder highlights">
+        <div><strong>+500</strong><span data-i18n="statHours">ساعة تطوعية</span></div>
+        <div><strong>3</strong><span data-i18n="statProjects">مشاريع عامة</span></div>
+        <div><strong>2026</strong><span data-i18n="statYear">سنة التخرج</span></div>
+        <div><strong data-i18n="statPassion">شغف</strong><span data-i18n="statBetter">يدفعني للأفضل</span></div>
+        <div><strong data-i18n="statLearning">تعلّم</strong><span data-i18n="statNonstop">بلا توقف</span></div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="galleryKicker">06 · Design gallery</div>
-          <h2 class="section-heading" data-i18n="galleryTitle">A visual practice.</h2>
-          <p class="section-copy" data-i18n="galleryCopy">A future home for identity systems, interfaces, and design explorations. New work will be added as the collection grows.</p>
+    <section class="voice-experience section" id="voice">
+      <div class="voice-feature reveal">
+        <div>
+          <p class="eyebrow">Voice AI</p>
+          <h2 data-i18n="voiceSectionTitle">تحدث مع مريم قريبًا</h2>
+          <p data-i18n="voiceSectionCopy">في المستقبل سيتم تطوير Mariam AI ليتحدث بصوت مريم الحقيقي ويقدم تجربة أكثر واقعية وتفاعلية.</p>
         </div>
-        <div class="gallery-grid fade-up">
-          <article class="gallery-card"><div class="gallery-mark"></div><h3 data-i18n="brandIdentity">Brand Identity</h3><p data-i18n="galleryPlaceholder">Gallery placeholder</p></article>
-          <article class="gallery-card"><div class="gallery-mark"></div><h3 data-i18n="contentDesign">Content Design</h3><p data-i18n="galleryPlaceholder">Gallery placeholder</p></article>
-          <article class="gallery-card"><div class="gallery-mark"></div><h3 data-i18n="uxConcepts">UI/UX Concepts</h3><p data-i18n="galleryPlaceholder">Gallery placeholder</p></article>
-          <article class="gallery-card"><div class="gallery-mark"></div><h3 data-i18n="logos">Logo Collection</h3><p data-i18n="galleryPlaceholder">Gallery placeholder</p></article>
-          <article class="gallery-card"><div class="gallery-mark"></div><h3 data-i18n="socialDesign">Social Media Design</h3><p data-i18n="galleryPlaceholder">Gallery placeholder</p></article>
-        </div>
+        <em>Coming Soon</em>
       </div>
     </section>
 
-    <section class="section community" id="communities">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="communityKicker">07 · Communities & content</div>
-          <h2 class="section-heading" data-i18n="communityTitle">Ideas grow when shared.</h2>
-          <p class="section-copy" data-i18n="communityCopy">Curated spaces for knowledge, conversation, and consistent progress. Each community is designed to make learning feel more useful and more connected.</p>
-        </div>
-        <div class="community-grid fade-up">
-          <article class="community-card"><span class="community-num">01</span><h3 data-i18n="knowledgeHub">Knowledge Hub</h3><p data-i18n="knowledgeCopy">A growing library of ideas, references, and useful discoveries.</p></article>
-          <article class="community-card"><span class="community-num">02</span><div class="community-logo"><img src="assets/images/hawat-logo.jpg" alt="Hawat logo" loading="lazy"></div><h3>Hawat</h3><p data-i18n="hawatCopy">A community concept shaped around meaningful exchange and connection.</p></article>
-          <article class="community-card"><span class="community-num">03</span><div class="community-logo"><img src="assets/images/step-by-mira-logo.jpg" alt="Step by Mira logo" loading="lazy"></div><h3>Step by Mira</h3><p data-i18n="stepCopy">A learning space for moving forward one intentional step at a time.</p></article>
-        </div>
+    <section class="future-road section" id="future">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="futureKicker">الرحلة مستمرة...</p>
+        <h2 data-i18n="futureTitle">كل نسخة تفتح بابًا جديدًا.</h2>
+      </div>
+      <div class="roadmap">
+        <article class="road-card reveal"><span>01</span><h3>Voice AI</h3><p data-i18n="rVoice">محادثة صوتية مباشرة مع Mariam AI.</p></article>
+        <article class="road-card reveal"><span>02</span><h3 data-i18n="rJourneyTitle">Interactive Journey</h3><p data-i18n="rJourney">رحلة أكثر تفاعلًا مع محطات وتجارب متجددة.</p></article>
+        <article class="road-card reveal"><span>03</span><h3 data-i18n="rProjectsTitle">New Projects</h3><p data-i18n="rProjects">مشاريع جديدة تُعلن عند اكتمال هويتها واتجاهها.</p></article>
+        <article class="road-card reveal"><span>04</span><h3 data-i18n="rArchiveTitle">Expanded Experience Archive</h3><p data-i18n="rArchive">أرشيف أوسع للخبرات والتعلم والمبادرات.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="experienceKicker">08 · Experience & leadership</div>
-          <h2 class="section-heading" data-i18n="experienceTitle">Learning through action.</h2>
-        </div>
-        <div class="timeline fade-up">
-          <article class="timeline-item"><small data-i18n="experience">Experience</small><div><h3>AWE</h3><p data-i18n="aweCopy">Entrepreneurial learning and development experience.</p></div></article>
-          <article class="timeline-item"><small data-i18n="experience">Experience</small><div><h3 data-i18n="dataClerk">Data Entry Clerk</h3><p data-i18n="hospital">Yanbu General Hospital</p></div></article>
-          <article class="timeline-item"><small data-i18n="training">Training</small><div><h3 data-i18n="reception">Reception Trainee</h3><p data-i18n="hospital">Yanbu General Hospital</p></div></article>
-          <article class="timeline-item"><small data-i18n="leadership">Leadership</small><div><h3 data-i18n="organizer">Organizer</h3><p data-i18n="bookFair">Yanbu Book Fair</p></div></article>
-          <article class="timeline-item"><small data-i18n="leadership">Leadership</small><div><h3 data-i18n="supervisor">Team Supervisor</h3><p data-i18n="historical">Yanbu Historical Area Event</p></div></article>
-          <article class="timeline-item"><small data-i18n="communityLabel">Community</small><div><h3 data-i18n="volunteer">Volunteer Activities</h3><p data-i18n="volunteerCopy">Contributing time, energy, and coordination to meaningful initiatives.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section certifications">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="certKicker">09 · Certifications</div>
-          <h2 class="section-heading" data-i18n="certTitle">A growing record.</h2>
-        </div>
-        <div class="coming-soon fade-up"><div><h3 data-i18n="soon">Coming soon.</h3><p data-i18n="soonCopy">This space is ready for future certifications, programs, and milestones.</p></div></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="learningKicker">10 · Learning journey</div>
-          <h2 class="section-heading" data-i18n="learningTitle">Curiosity in motion.</h2>
-          <p class="section-copy" data-i18n="learningCopy">A personal learning system shaped by reading, reflection, and applying new ideas to real projects.</p>
-        </div>
-        <div class="learning-grid fade-up">
-          <article class="learning-card"><span>01</span><h3 data-i18n="reading">Currently Reading</h3><p data-i18n="learningPlaceholder">New notes will be added soon.</p></article>
-          <article class="learning-card"><span>02</span><h3 data-i18n="quotes">Favorite Quotes</h3><p data-i18n="learningPlaceholder">New notes will be added soon.</p></article>
-          <article class="learning-card"><span>03</span><h3 data-i18n="lessons">Lessons Applied</h3><p data-i18n="learningPlaceholder">New notes will be added soon.</p></article>
-          <article class="learning-card"><span>04</span><h3 data-i18n="books">Books</h3><p data-i18n="learningPlaceholder">New notes will be added soon.</p></article>
-          <article class="learning-card"><span>05</span><h3 data-i18n="notes">Learning Notes</h3><p data-i18n="learningPlaceholder">New notes will be added soon.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="social">
-      <div class="container">
-        <div class="social-intro">
-          <h2 data-i18n="socialTitle">Connect &amp; Explore</h2>
-          <p data-i18n="socialSubtitle">My digital platforms, communities, and spaces where I share projects, learning, and ideas.</p>
-        </div>
-        <div class="social-grid">
+    <section class="contact section" id="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow" data-i18n="contactKicker">لِنصنع المستقبل معًا</p>
+        <h2 data-i18n="contactTitle">تواصلي معي.</h2>
+        <div class="socials">
           <a href="https://www.linkedin.com/in/mmtt11921/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://x.com/MiraVibesX" target="_blank" rel="noopener noreferrer">Personal X</a>
+          <a href="https://x.com/MiraVibesX" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.instagram.com/miravibest/" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://www.tiktok.com/@miravibesx" target="_blank" rel="noopener noreferrer">TikTok</a>
           <a href="https://github.com/mmtt11921" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://t.me/knowledgeHub_mariam" target="_blank" rel="noopener noreferrer">Knowledge Hub</a>
-          <a href="https://t.me/Hwaat_32178" target="_blank" rel="noopener noreferrer">Hawat</a>
-          <a href="https://x.com/MiraSteps" target="_blank" rel="noopener noreferrer">Step by Mira</a>
         </div>
       </div>
-    </section>
-
-    <section class="section ai" id="mariam-ai">
-      <div class="container">
-        <div class="ai-shell fade-up">
-          <div class="ai-copy">
-            <span class="eyebrow" data-i18n="aiKicker">11 · Mariam AI</span>
-            <h2>Mariam<br><em>AI.</em></h2>
-            <p data-i18n="aiCopy">A conversational guide to Mariam’s ecosystem. Explore her background, current work, communities, and the future she is building toward.</p>
-            <button class="button button-gold" id="aiStart" type="button" data-i18n="startConversation">Start a conversation ✦</button>
-          </div>
-          <div class="ai-panel">
-            <span data-i18n="suggested">Suggested questions</span>
-            <div class="question-list">
-              <button class="question" type="button" data-topic="who" data-i18n="qWho">Who is Mariam Alharbi?</button>
-              <button class="question" type="button" data-topic="step" data-i18n="qStep">What is Step by Mira?</button>
-              <button class="question" type="button" data-topic="hawat" data-i18n="qHawat">What is Hawat?</button>
-              <button class="question" type="button" data-topic="cybersecurity" data-i18n="qCyber">Why Cybersecurity?</button>
-              <button class="question" type="button" data-topic="healthcare" data-i18n="qHealth">Why Healthcare AI?</button>
-              <button class="question" type="button" data-topic="projects" data-i18n="qProjects">What projects is Mariam building?</button>
-              <button class="question" type="button" data-topic="future" data-i18n="qFuture">What is Mariam's future vision?</button>
-            </div>
-            <div class="ai-response" id="aiResponse" aria-live="polite" data-i18n="aiDefault">Ask a question to explore Mariam’s public journey, projects, communities, and vision.</div>
-            <form class="ai-form" id="aiForm">
-              <input id="aiQuestion" type="text" autocomplete="off" aria-label="Ask Mariam AI" placeholder="Ask Mariam AI in Arabic or English..." required>
-              <button class="button button-gold" type="submit" data-i18n="aiSend">Ask ✦</button>
-            </form>
-            <p class="ai-version-note" data-i18n="aiVersionNote">Mariam AI is currently in its first public version and continues to evolve alongside Mariam's projects, experiences, and learning journey.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="vision">
-      <div class="container">
-        <div class="section-intro fade-up">
-          <div class="section-kicker" data-i18n="visionKicker">12 · Future vision</div>
-          <h2 class="section-heading" data-i18n="visionTitle">Designed to evolve.</h2>
-          <p class="section-copy" data-i18n="visionCopy">This digital space is not a finished archive. It is a living platform, designed to become more useful as projects, communities, and ideas grow.</p>
-        </div>
-        <div class="roadmap-grid fade-up">
-          <article class="roadmap-card">
-            <span class="eyebrow" data-i18n="websiteRoadmap">Website roadmap</span><h3 data-i18n="platformEvolution">Platform evolution</h3>
-            <div class="phase"><strong data-i18n="phase1">Phase 01</strong><p data-i18n="phase1Copy">Portfolio · Projects · Communities · AI Assistant</p></div>
-            <div class="phase"><strong data-i18n="phase2">Phase 02</strong><p data-i18n="phase2Copy">Interactive Comments · Community Suggestions · User Participation</p></div>
-            <div class="phase"><strong data-i18n="phase3">Phase 03</strong><p data-i18n="phase3Copy">Dynamic Content System · Project Tracking · Automatic Updates</p></div>
-          </article>
-          <article class="roadmap-card">
-            <span class="eyebrow" data-i18n="aiRoadmap">Mariam AI roadmap</span><h3 data-i18n="intelligenceEvolution">Intelligence evolution</h3>
-            <div class="phase"><strong data-i18n="current">Current</strong><p data-i18n="assistantCurrent">Project Assistant</p></div>
-            <div class="phase"><strong data-i18n="future">Future</strong><p data-i18n="assistantFuture">Learning Guide · Knowledge Assistant · Project Explorer · Community Assistant</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-copy fade-up">
-          <span class="eyebrow" data-i18n="contactKicker">13 · Contact</span>
-          <h2 data-i18n="contactTitle">Let’s start a conversation.</h2>
-          <p data-i18n="contactCopy">For collaborations, thoughtful conversations, and future opportunities, leave a message below.</p>
-        </div>
-        <form class="contact-form fade-up" id="contactForm" action="https://formspree.io/f/mykvapbd" method="POST">
-          <div class="form-group"><label for="name" data-i18n="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
-          <div class="form-group"><label for="email" data-i18n="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          <div class="form-group full"><label for="subject" data-i18n="subject">Subject</label><input id="subject" name="subject" type="text"></div>
-          <div class="form-group full"><label for="message" data-i18n="message">Message</label><textarea id="message" name="message" required></textarea></div>
-          <div class="form-group full"><button class="button button-primary" type="submit" data-i18n="send">Send Message ↗</button></div>
-          <p class="form-status full" id="formStatus"></p>
-        </form>
-      </div>
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mykvapbd" method="POST">
+        <label><span data-i18n="name">الاسم</span><input name="name" autocomplete="name" required></label>
+        <label><span data-i18n="email">البريد الإلكتروني</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="full"><span data-i18n="subject">الموضوع</span><input name="subject"></label>
+        <label class="full"><span data-i18n="message">الرسالة</span><textarea name="message" required></textarea></label>
+        <p class="form-status full" id="formStatus" aria-live="polite"></p>
+        <button class="btn btn-gold full" type="submit" data-i18n="send">إرسال الرسالة</button>
+      </form>
     </section>
   </main>
 
-  <footer id="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">Mariam Alharbi.</div>
-      <p class="footer-copy" data-i18n="footer">This website evolves as I learn, build, and grow.</p>
-      <a class="back-top" href="#top" data-i18n="backTop">Back to top ↑</a>
-    </div>
-    <p class="container footer-legal" data-i18n="footerLegal">© 2026 Mariam Alharbi. All rights reserved. Projects, concepts, and original content are presented with care.</p>
+  <footer class="footer">
+    <p data-i18n="footer">This website evolves as I learn, build, and grow.</p>
+    <small>© 2026 Mariam Alharbi. All rights reserved.</small>
   </footer>
+
+  <div class="modal" id="voiceModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="closeVoiceModal" type="button" aria-label="Close">×</button>
+      <span class="pulse-dot"></span>
+      <h3 data-i18n="voiceModalTitle">قريبًا...</h3>
+      <p data-i18n="voiceModalCopy">نعمل على تطوير Mariam AI ليتمكن الزوار من التحدث معه صوتيًا والتعرف على مريم بطريقة أكثر تفاعلية.</p>
+    </div>
+  </div>
 
   <script src="js/ai-config.js"></script>
   <script src="js/contact-config.js"></script>

@@ -1,11 +1,11 @@
-# Mariam Alharbi Founder Portfolio
+# Mariam Alharbi Founder Website V3
 
-Production-ready static website for Mariam Alharbi.
+Production-ready premium founder website for Mariam Alharbi.
 
 ## Project Structure
 
 ```text
-Mariam-Alharbi-Portfolio-Production/
+Mariam.web/
 ├── index.html
 ├── README.md
 ├── vercel.json
@@ -19,25 +19,25 @@ Mariam-Alharbi-Portfolio-Production/
 └── assets/
     └── images/
         ├── profile-photo.jpg
-        ├── mariam-founder-placeholder.png
+        ├── founder-hero-scene.png
         ├── hawat-logo.jpg
         ├── step-by-mira-logo.jpg
         └── gallery-ready/
             ├── ruqi-logo.jpg
-            ├── muhayya-logo.jpg
-            └── smart-warmth-guardian-logo.jpg
+            ├── vision-concept-logo.jpg
+            └── innovation-concept-logo.jpg
 ```
 
 ## Source Files
 
 - `index.html`: Website content and semantic page structure.
-- `css/styles.css`: Approved responsive visual design.
+- `css/styles.css`: Responsive Founder V3 visual system, cinematic hero, glass cards, scroll storytelling, and mobile layouts.
 - `js/app.js`: Language toggle, navigation, animations, Mariam AI runtime, and contact-form submission behavior.
 - `js/ai-config.js`: Mariam AI public knowledge base, privacy-safe routing configuration, and bilingual answers.
 - `js/contact-config.js`: Formspree public endpoint configuration and contact-form messages.
 - `assets/images/`: Optimized images used by the website and public gallery-ready assets.
 
-The private future-brand logo asset is intentionally excluded from this public deployment package. The public website uses the approved `Q` monogram only.
+Private future-venture assets and names are intentionally excluded or generalized in this public deployment package.
 
 ## Run Locally
 

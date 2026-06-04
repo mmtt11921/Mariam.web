@@ -1,179 +1,141 @@
-    const translations = {
-      ar: {
-        skip: "تجاوز إلى المحتوى", navAbout: "عن مريم", navProjects: "المشاريع", navCommunities: "المجتمعات", navVision: "الرؤية", navContact: "تواصل",
-        askAI: "اسأل Mariam AI", heroRole: "مؤسسة · صانعة · منشئة مجتمعات", heroTitle: "الأمن السيبراني والذكاء الاصطناعي الصحي",
-        heroCopy: "أبني مشاريع تقنية ومجتمعات تعليمية وحلولًا رقمية للمستقبل.", explore: "استكشف رحلتي", downloadCV: "تحميل السيرة الذاتية",
-        portraitNote: "ملف المؤسِسة · 2026", heroBottom: "أبني بهدف. وأتعلّم بفضول.", scroll: "مرر للاستكشاف",
-        buildKicker: "01 · محفظة المشاريع", buildTitle: "ما الذي أبنيه.", buildCopy: "منظومة متنامية من المنتجات والأفكار والمشاريع المبنية على التعلم. لكل مشروع مساره المقصود، وتبقى التفاصيل المختارة خاصة أثناء تطوره.",
-        current: "مشروع حالي", visionProject: "مشروع رؤيوي", future: "مشروع مستقبلي", personalWebsite: "الموقع الشخصي", warmth: "حارس الدفء الذكي",
-        aboutKicker: "02 · عن مريم", aboutQuote: "«تصبح التقنية ذات معنى عندما تُبنى حول الإنسان والتقدم والإمكانات.»",
-        aboutP1: "مريم الحربي صانعة تقنية ترسم مسارًا متعدد التخصصات بين الأمن السيبراني والذكاء الاصطناعي الصحي ونظم المعلومات. ينطلق عملها من قناعة عملية: الحلول الرقمية المؤثرة تبدأ بفهم عميق للإنسان والأنظمة المحيطة به.",
-        aboutP2: "إلى جانب مفاهيم المنتجات والمشاريع المستقبلية، تنشئ مريم مجتمعات تعليمية تجعل المعرفة أسهل في الاستكشاف والتطبيق والمشاركة. وتعكس محفظتها المتطورة عقلية مؤسسة: فضولية، واعية، وملتزمة بتحويل الأفكار إلى قيمة مستدامة.",
-        disciplines: "مجالات أساسية", ventures: "أفكار مشاريع", communities: "مجتمعات",
-        connectKicker: "03 · الرابط المشترك", connectTitle: "كيف يرتبط كل شيء.", connectCopy: "تخصصات متعددة. ورؤية واحدة: بناء منتجات رقمية مدروسة بعمق تقني وتفكير نظمي ومنظور إنساني يصنع قيمة حقيقية.",
-        cybersecurity: "الأمن السيبراني", healthcare: "الذكاء الاصطناعي الصحي", information: "نظم المعلومات", software: "تطوير البرمجيات", design: "تجربة المستخدم والتصميم الجرافيكي", entrepreneurship: "ريادة الأعمال", connectEnd: "معًا، تدعم هذه المجالات رحلة مؤسِسة تتطور باستمرار.",
-        focusKicker: "04 · القدرات", focusTitle: "مجالات التركيز.", focusOne: "آمن منذ التصميم", focusTwo: "ذكاء يتمحور حول الإنسان", focusThree: "من الأفكار إلى الأنظمة", focusFour: "الوضوح عبر التصميم", focusFive: "تفكير مترابط",
-        projectKicker: "المشاريع والاستثمارات", projectTitle: "المشاريع والاستثمارات.", projectCopy: "يُقدَّم كل مشروع عمدًا بوصف عام موجز. تبقى بعض التفاصيل خاصة بينما تتطور الأفكار وتنمو الهوية وتصبح الرؤية أقوى.",
-        currentProjects: "المشاريع الحالية", visionProjects: "المشاريع الرؤيوية", futureVentures: "الاستثمارات المستقبلية",
-        ruqiShort: "أول مشروع علامة تجارية قيد التطوير حاليًا، يركز على بناء هوية راقية وتجربة عميل مميزة.", stepShort: "رحلة لاستكشاف المنتجات الرقمية: الملاحظة والتحليل والتحسين وإعادة تصور تجارب أفضل.", mariamAiShort: "مساعد ذكاء اصطناعي شخصي مصمم للتعريف برحلتي ومشاريعي ومجتمعاتي ورؤيتي المستقبلية.", websiteShort: "مساحة رقمية حية توثّق نموي وعملي ورحلة تعلمي وخططي المستقبلية.", muhayyaShort: "مشروع رؤيوي طويل المدى حظي بتقدير منشآت ويتطور باستمرار.", warmthShort: "مفهوم ابتكاري مقبول بخطط تطوير مستقبلية ورؤية قادمة أقوى.", qShort: "علامة تجارية مستقبلية لا تزال تحت التطوير طويل المدى، وسيتم الإعلان عن المزيد من التفاصيل في الوقت المناسب.", tamamShort: "مشروع رقمي مستقبلي قيد التطوير الاستراتيجي حاليًا.", hamiShort: "مشروع رقمي مستقبلي قيد التطوير الاستراتيجي حاليًا.",
-        privateDesc: "نبني بعناية. ستُشارك التفاصيل في الوقت المناسب.", communityDesc: "مساحة تعليمية للتقدم الثابت والهادف.", aiDesc: "بوابة ذكية إلى رحلة مريم ومشاريعها ورؤيتها.", websiteDesc: "بيت رقمي حي لمنظومة مؤسِسة نامية.",
-        galleryKicker: "06 · معرض التصميم", galleryTitle: "ممارسة بصرية.", galleryCopy: "مساحة مستقبلية للهويات والواجهات والاستكشافات التصميمية. ستُضاف أعمال جديدة مع نمو المجموعة.",
-        brandIdentity: "الهوية البصرية", contentDesign: "تصميم المحتوى", uxConcepts: "مفاهيم UI/UX", logos: "مجموعة الشعارات", socialDesign: "تصميم وسائل التواصل", galleryPlaceholder: "مساحة للمعرض",
-        communityKicker: "07 · المجتمعات والمحتوى", communityTitle: "تنمو الأفكار حين نتشاركها.", communityCopy: "مساحات منتقاة للمعرفة والحوار والتقدم المستمر. صُمم كل مجتمع ليجعل التعلم أكثر فائدة وترابطًا.",
-        knowledgeHub: "مركز المعرفة", knowledgeCopy: "مكتبة متنامية من الأفكار والمراجع والاكتشافات المفيدة.", hawatCopy: "فكرة مجتمع تقوم على التبادل الهادف والتواصل.", stepCopy: "مساحة تعليمية للتقدم خطوة واعية في كل مرة.",
-        experienceKicker: "08 · الخبرة والقيادة", experienceTitle: "التعلّم عبر العمل.", experience: "خبرة", training: "تدريب", leadership: "قيادة", communityLabel: "مجتمع", aweCopy: "خبرة في التعلم والتطوير الريادي.", dataClerk: "مدخلة بيانات", hospital: "مستشفى ينبع العام", reception: "متدربة استقبال", organizer: "منظِمة", bookFair: "معرض ينبع للكتاب", supervisor: "مشرفة فريق", historical: "فعالية منطقة ينبع التاريخية", volunteer: "أنشطة تطوعية", volunteerCopy: "المساهمة بالوقت والطاقة والتنسيق في مبادرات هادفة.",
-        certKicker: "09 · الشهادات", certTitle: "سجل ينمو.", soon: "قريبًا.", soonCopy: "هذه المساحة جاهزة للشهادات والبرامج والإنجازات القادمة.",
-        learningKicker: "10 · رحلة التعلّم", learningTitle: "فضول متحرك.", learningCopy: "نظام تعلم شخصي يتشكل بالقراءة والتأمل وتطبيق الأفكار الجديدة في مشاريع حقيقية.",
-        reading: "أقرأ حاليًا", quotes: "اقتباساتي المفضلة", lessons: "دروس طبّقتها", books: "الكتب", notes: "ملاحظات التعلّم", learningPlaceholder: "ستُضاف ملاحظات جديدة قريبًا.",
-        aiKicker: "11 · Mariam AI", aiCopy: "دليل حواري لمنظومة مريم. استكشف خلفيتها وعملها الحالي ومجتمعاتها والمستقبل الذي تبنيه.", startConversation: "ابدأ محادثة ✦", suggested: "أسئلة مقترحة", qWho: "من هي مريم الحربي؟", qProjects: "ما المشاريع التي تبنيها مريم؟", qStep: "ما هو Step by Mira؟", qHawat: "ما هي هواة؟", qCyber: "لماذا تهتم مريم بالأمن السيبراني؟", qHealth: "لماذا تهتم مريم بالذكاء الاصطناعي الصحي؟", qFuture: "ما هي رؤية مريم المستقبلية؟", aiDefault: "اسأل عن رحلة مريم العامة ومشاريعها ومجتمعاتها ورؤيتها المستقبلية.", aiSend: "اسأل ✦", aiVersionNote: "مريم AI في نسخته الأولى حاليًا، ويتطور باستمرار بالتزامن مع مشاريع مريم وخبراتها ورحلتها التعليمية.",
-        visionKicker: "12 · الرؤية المستقبلية", visionTitle: "مصمم ليتطور.", visionCopy: "هذه المساحة الرقمية ليست أرشيفًا مكتملًا، بل منصة حية صُممت لتصبح أكثر فائدة مع نمو المشاريع والمجتمعات والأفكار.",
-        websiteRoadmap: "خارطة طريق الموقع", platformEvolution: "تطور المنصة", phase1: "المرحلة 01", phase2: "المرحلة 02", phase3: "المرحلة 03", phase1Copy: "الملف الشخصي · المشاريع · المجتمعات · مساعد الذكاء الاصطناعي", phase2Copy: "التعليقات التفاعلية · اقتراحات المجتمع · مشاركة المستخدمين", phase3Copy: "نظام محتوى ديناميكي · تتبع المشاريع · تحديثات تلقائية", aiRoadmap: "خارطة Mariam AI", intelligenceEvolution: "تطور الذكاء", assistantCurrent: "مساعد المشاريع", assistantFuture: "دليل تعلّم · مساعد معرفة · مستكشف مشاريع · مساعد مجتمع",
-        contactKicker: "13 · تواصل", contactTitle: "لنبدأ حوارًا.", contactCopy: "للتعاون والحوارات الهادفة والفرص المستقبلية، اترك رسالة أدناه.", name: "الاسم", email: "البريد الإلكتروني", subject: "الموضوع", message: "الرسالة", send: "إرسال الرسالة ↗", socialTitle: "تواصل واستكشف", socialSubtitle: "حساباتي الرقمية، المجتمعات، والمنصات التي أشارك من خلالها المعرفة والمشاريع.", footer: "يتطور هذا الموقع مع تعلّمي وبنائي ونموي.", footerLegal: "© 2026 مريم الحربي. جميع الحقوق محفوظة. تُعرض المشاريع والمفاهيم والمحتوى الأصلي بعناية.", backTop: "العودة للأعلى ↑"
-      }
-    };
+const translations = {
+  en: {
+    skip: "Skip to content", navJourney: "Journey", navExperience: "Experience", navLeadership: "Leadership", navAi: "Mariam AI", navFuture: "Future", navContact: "Contact",
+    heroBubble: "Welcome to Mariam’s journey ✨", heroHello: "Welcome", heroTitle: "I am Mariam Alharbi", heroBelief: "I believe technology creates real impact.", heroLead: "I build technology projects, learning communities, and digital solutions for the future.",
+    askAI: "Ask Mariam AI", exploreProjects: "Explore Projects", voiceTitle: "Voice experience coming soon", voiceSmall: "Soon, you will be able to speak with Mariam AI by voice.", scrollCue: "Scroll to explore",
+    journeyTitle: "The journey starts here ✨", journeyNote: "The journey continues... wait for what is next.",
+    pMariamAi: "A prototype that lets visitors learn about Mariam, her projects, and interests through an intelligent conversation.", pStep: "A learning platform that helps people move step by step in their professional and technical journey.", pFutureTitle: "Future Venture", pFuture: "The next project is currently in development. Details will be announced later.",
+    experienceTitle: "Work Experience", dataEntry: "Data Entry", reception: "Reception Trainee", aweCopy: "Accurate data entry, organization, and workflow support.", hospitalCopy: "Experience inside a healthcare environment to understand workflows and visitor service.",
+    leadershipTitle: "Volunteering & Leadership", basmahTitle: "Basmah Platform", basmahCopy: "Volunteer participation in humanitarian and community initiatives.", eventsTitle: "Event Organization", eventsCopy: "Organizing work, supporting visitors, and helping teams during events.", volunteerTitle: "Volunteer Activities", volunteerCopy: "Supervised the organizing team in one of the historical events organized by Basmah.",
+    aiPrototype: "The current prototype. It will evolve in the future to include voice, visual interaction, and more direct experiences.", aiDefault: "Type your question here or choose one of the suggestions.",
+    statHours: "volunteer hours", statProjects: "public projects", statYear: "graduation year", statPassion: "Passion", statBetter: "drives me forward", statLearning: "Learning", statNonstop: "never stops",
+    voiceSectionTitle: "Talk with Mariam soon", voiceSectionCopy: "In the future, Mariam AI will be developed to speak with Mariam’s real voice and offer a more realistic and interactive experience.",
+    futureKicker: "The journey continues...", futureTitle: "Every version opens a new door.", rVoice: "Direct voice conversations with Mariam AI.", rJourneyTitle: "Interactive Journey", rJourney: "A more interactive journey with evolving milestones and experiences.", rProjectsTitle: "New Projects", rProjects: "New projects announced when their identity and direction are ready.", rArchiveTitle: "Expanded Experience Archive", rArchive: "A wider archive of experience, learning, and initiatives.",
+    contactKicker: "Let’s build the future together", contactTitle: "Contact me.", name: "Name", email: "Email", subject: "Subject", message: "Message", send: "Send Message", footer: "This website evolves as I learn, build, and grow.",
+    voiceModalTitle: "Coming Soon...", voiceModalCopy: "We are building voice conversations for Mariam AI to create a more interactive experience."
+  },
+  arChips: ["✨ من هي مريم الحربي؟", "✨ وش هي خطوة ميرا؟", "✨ وش مشاريعك؟", "✨ ليش الأمن السيبراني؟", "✨ وش رؤيتك المستقبلية؟", "✨ ليش الذكاء الاصطناعي الصحي؟"],
+  enChips: ["✨ Who is Mariam Alharbi?", "✨ What is Step by Mira?", "✨ What are your projects?", "✨ Why cybersecurity?", "✨ What is your future vision?", "✨ Why Healthcare AI?"]
+};
 
-    const english = {};
-    document.querySelectorAll("[data-i18n]").forEach(el => english[el.dataset.i18n] = el.textContent);
-    let language = "en";
+const arabic = {};
+document.querySelectorAll("[data-i18n]").forEach(el => arabic[el.dataset.i18n] = el.textContent);
+let language = "ar";
 
-    function setLanguage(lang) {
-      language = lang;
-      const arabic = lang === "ar";
-      document.documentElement.lang = lang;
-      document.documentElement.dir = arabic ? "rtl" : "ltr";
-      document.body.classList.toggle("rtl", arabic);
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const value = arabic ? translations.ar[el.dataset.i18n] : english[el.dataset.i18n];
-        if (value) el.textContent = value;
-      });
-      document.getElementById("langSwitch").innerHTML = arabic ? "English <span>|</span> العربية" : "العربية <span>|</span> EN";
-      document.getElementById("aiResponse").textContent = arabic ? translations.ar.aiDefault : english.aiDefault;
-      document.getElementById("aiQuestion").placeholder = arabic ? "اسأل Mariam AI بالعربية أو الإنجليزية..." : "Ask Mariam AI in Arabic or English...";
+function setLanguage(lang) {
+  language = lang;
+  const isArabic = lang === "ar";
+  document.documentElement.lang = lang;
+  document.documentElement.dir = isArabic ? "rtl" : "ltr";
+  document.body.classList.toggle("ltr", !isArabic);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const value = isArabic ? arabic[el.dataset.i18n] : translations.en[el.dataset.i18n];
+    if (value) el.textContent = value;
+  });
+  document.getElementById("langSwitch").textContent = isArabic ? "EN" : "العربية";
+  document.getElementById("aiQuestion").placeholder = isArabic ? "اكتب سؤالك هنا..." : "Type your question here...";
+  document.getElementById("aiResponse").textContent = isArabic ? arabic.aiDefault : translations.en.aiDefault;
+  document.querySelectorAll(".chip-list .question").forEach((button, index) => {
+    button.textContent = isArabic ? translations.arChips[index] : translations.enChips[index];
+  });
+}
+
+document.getElementById("langSwitch").addEventListener("click", () => setLanguage(language === "ar" ? "en" : "ar"));
+const navLinks = document.getElementById("navLinks");
+document.getElementById("menuBtn").addEventListener("click", event => {
+  const open = navLinks.classList.toggle("open");
+  event.currentTarget.setAttribute("aria-expanded", open);
+});
+navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => navLinks.classList.remove("open")));
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+      revealObserver.unobserve(entry.target);
     }
+  });
+}, { threshold: .12 });
+document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
-    document.getElementById("langSwitch").addEventListener("click", () => setLanguage(language === "en" ? "ar" : "en"));
-    const navLinks = document.getElementById("navLinks");
-    const menuBtn = document.getElementById("menuBtn");
-    menuBtn.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", isOpen);
-    });
-    navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuBtn.setAttribute("aria-expanded", "false");
-    }));
+const walker = document.getElementById("walker");
+window.addEventListener("scroll", () => {
+  if (!walker) return;
+  const sections = ["journey", "experience", "mariam-ai", "voice", "future"].map(id => document.getElementById(id)).filter(Boolean);
+  const index = sections.reduce((active, section, current) => section.getBoundingClientRect().top < window.innerHeight * .58 ? current : active, 0);
+  const direction = language === "ar" ? -1 : 1;
+  const travel = Math.min(92, window.scrollY / 18);
+  const stageLift = [0, -18, 18, -8, 10][index] || 0;
+  walker.style.opacity = window.scrollY < window.innerHeight * .72 ? "0" : ".95";
+  walker.style.transform = `translate(${direction * travel}px, ${stageLift}px) rotate(${direction * (index * 4 - 4)}deg)`;
+}, { passive: true });
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .11 });
-    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+const { aiAnswers, aiIntents, qLegacyAlias, qLegacyArabicAlias, qConceptTerms } = window.MARIAM_AI_CONFIG;
+const hasArabic = text => /[\u0600-\u06FF]/.test(text);
+const normalizeAiText = text => text.toLowerCase().normalize("NFD")
+  .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g, "")
+  .replace(/[إأآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/ؤ/g, "و").replace(/ئ/g, "ي")
+  .replace(/[^a-z0-9\u0600-\u06FF\s]/g, " ").replace(/\s+/g, " ").trim();
+function scoreAiIntent(text, intent) {
+  let score = 0;
+  intent.phrases.forEach(phrase => { if (text.includes(normalizeAiText(phrase))) score = Math.max(score, 100); });
+  intent.words.forEach(word => { if (text.includes(normalizeAiText(word))) score += word.includes(" ") ? 45 : 24; });
+  return Math.min(score, 100);
+}
+function getAiTopic(question) {
+  const text = normalizeAiText(question);
+  const mentionsQ = /\bq\b/.test(text) || text.includes(qLegacyAlias) || text.includes(qLegacyArabicAlias);
+  if (mentionsQ && qConceptTerms.some(term => text.includes(term))) return "qConceptPrivate";
+  if (mentionsQ || ["what is future venture", "وش المشروع القادم", "وش المشروع المستقبلي"].some(phrase => text.includes(normalizeAiText(phrase)))) return "confidential";
+  const ranked = aiIntents.map(intent => ({ ...intent, score: scoreAiIntent(text, intent) })).sort((a, b) => b.score - a.score);
+  const hardMatch = ranked.find(intent => intent.hard && intent.score > 0);
+  if (hardMatch) return hardMatch.topic;
+  return ranked[0].score >= 70 ? ranked[0].topic : "unknown";
+}
+function answerAi(question, topic) {
+  const responseLanguage = hasArabic(question) ? "ar" : "en";
+  return aiAnswers[responseLanguage][topic || getAiTopic(question)];
+}
+function showAiAnswer(answer) {
+  const response = document.getElementById("aiResponse");
+  response.style.opacity = 0;
+  setTimeout(() => { response.textContent = answer; response.style.opacity = 1; }, 140);
+}
+document.querySelectorAll(".question").forEach(button => button.addEventListener("click", () => showAiAnswer(aiAnswers[language][button.dataset.topic])));
+document.getElementById("aiForm").addEventListener("submit", event => {
+  event.preventDefault();
+  const input = document.getElementById("aiQuestion");
+  showAiAnswer(answerAi(input.value));
+  input.value = "";
+});
 
-    document.getElementById("cvButton").addEventListener("click", e => {
-      e.preventDefault();
-      alert(language === "ar" ? "ستُضاف السيرة الذاتية للتحميل قريبًا." : "The downloadable CV will be added soon.");
-    });
+const voiceModal = document.getElementById("voiceModal");
+function openVoiceModal() { voiceModal.classList.add("open"); voiceModal.setAttribute("aria-hidden", "false"); }
+function closeVoiceModal() { voiceModal.classList.remove("open"); voiceModal.setAttribute("aria-hidden", "true"); }
+document.getElementById("voiceHero").addEventListener("click", openVoiceModal);
+document.getElementById("closeVoiceModal").addEventListener("click", closeVoiceModal);
+voiceModal.addEventListener("click", event => { if (event.target === voiceModal) closeVoiceModal(); });
 
-    const { aiAnswers, aiIntents, qLegacyAlias, qLegacyArabicAlias, qConceptTerms } = window.MARIAM_AI_CONFIG;
-    const hasArabic = text => /[\u0600-\u06FF]/.test(text);
-    const normalizeAiText = text => text
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g, "")
-      .replace(/[إأآٱ]/g, "ا")
-      .replace(/ى/g, "ي")
-      .replace(/ة/g, "ه")
-      .replace(/ؤ/g, "و")
-      .replace(/ئ/g, "ي")
-      .replace(/[^a-z0-9\u0600-\u06FF\s]/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-    function scoreAiIntent(text, intent) {
-      let score = 0;
-      intent.phrases.forEach(phrase => {
-        if (text.includes(phrase)) score = Math.max(score, 100);
-      });
-      intent.words.forEach(word => {
-        if (text.includes(word)) score += word.includes(" ") ? 45 : 24;
-      });
-      return Math.min(score, 100);
-    }
-    function getAiTopic(question) {
-      const text = normalizeAiText(question);
-      const mentionsQ = /\bq\b/.test(text) || text.includes(qLegacyAlias) || text.includes(qLegacyArabicAlias);
-      if (mentionsQ && qConceptTerms.some(term => text.includes(term))) return "qConceptPrivate";
-      if (mentionsQ && (
-        text.includes(qLegacyAlias) ||
-        text.includes(qLegacyArabicAlias) ||
-        ["what is q", "tell me about q", "وش q", "ايش مشروع q"].some(phrase => text.includes(phrase))
-      )) return "qPublic";
-      const ranked = aiIntents
-        .map(intent => ({ ...intent, score: scoreAiIntent(text, intent) }))
-        .sort((a, b) => b.score - a.score);
-      const hardMatch = ranked.find(intent => intent.hard && intent.score > 0);
-      if (hardMatch) return hardMatch.topic;
-      return ranked[0].score >= 70 ? ranked[0].topic : "unknown";
-    }
-    function answerAi(question, topic) {
-      const responseLanguage = hasArabic(question) ? "ar" : "en";
-      return aiAnswers[responseLanguage][topic || getAiTopic(question)];
-    }
-    function showAiAnswer(answer) {
-      const response = document.getElementById("aiResponse");
-      response.style.opacity = 0;
-      setTimeout(() => {
-        response.textContent = answer;
-        response.style.opacity = 1;
-      }, 150);
-    }
-    document.querySelectorAll(".question").forEach(button => button.addEventListener("click", () => {
-      showAiAnswer(aiAnswers[language][button.dataset.topic]);
-    }));
-    document.getElementById("aiStart").addEventListener("click", () => document.getElementById("aiQuestion").focus());
-    document.getElementById("aiForm").addEventListener("submit", e => {
-      e.preventDefault();
-      const input = document.getElementById("aiQuestion");
-      showAiAnswer(answerAi(input.value));
-      input.value = "";
-    });
-
-    const {
-      formId: CONTACT_FORM_ID,
-      endpoint: CONTACT_FORM_ENDPOINT,
-      successMessage: CONTACT_SUCCESS,
-      errorMessage: CONTACT_ERROR
-    } = window.CONTACT_FORM_CONFIG;
-    document.getElementById("contactForm").addEventListener("submit", async e => {
-      e.preventDefault();
-      const form = e.currentTarget;
-      const status = document.getElementById("formStatus");
-      const submit = form.querySelector('button[type="submit"]');
-      status.className = "form-status full";
-      status.textContent = "";
-      if (!CONTACT_FORM_ID) {
-        status.classList.add("error");
-        status.textContent = CONTACT_ERROR;
-        return;
-      }
-      submit.disabled = true;
-      try {
-        const response = await fetch(CONTACT_FORM_ENDPOINT, {
-          method: "POST",
-          body: new FormData(form),
-          headers: { "Accept": "application/json" }
-        });
-        if (!response.ok) throw new Error("Form submission failed");
-        form.reset();
-        status.classList.add("success");
-        status.textContent = CONTACT_SUCCESS;
-      } catch {
-        status.classList.add("error");
-        status.textContent = CONTACT_ERROR;
-      } finally {
-        submit.disabled = false;
-      }
-    });
+const { formId: CONTACT_FORM_ID, endpoint: CONTACT_FORM_ENDPOINT, successMessage: CONTACT_SUCCESS, errorMessage: CONTACT_ERROR } = window.CONTACT_FORM_CONFIG;
+document.getElementById("contactForm").addEventListener("submit", async event => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const status = document.getElementById("formStatus");
+  const submit = form.querySelector('button[type="submit"]');
+  status.className = "form-status full";
+  status.textContent = "";
+  if (!CONTACT_FORM_ID) { status.classList.add("error"); status.textContent = CONTACT_ERROR; return; }
+  submit.disabled = true;
+  try {
+    const response = await fetch(CONTACT_FORM_ENDPOINT, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+    if (!response.ok) throw new Error("Form submission failed");
+    form.reset();
+    status.classList.add("success");
+    status.textContent = CONTACT_SUCCESS;
+  } catch {
+    status.classList.add("error");
+    status.textContent = CONTACT_ERROR;
+  } finally {
+    submit.disabled = false;
+  }
+});
