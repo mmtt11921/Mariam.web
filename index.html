@@ -32,6 +32,15 @@
     </div>
   </nav>
 
+  <nav class="side-nav" aria-label="Quick navigation">
+    <a class="active" href="#top" aria-label="Home" data-side-target="top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M9.5 19.5v-6h5v6"/></svg></a>
+    <a href="#journey" aria-label="Journey" data-side-target="journey"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3Z"/><path d="m19 14 .8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14Z"/></svg></a>
+    <a href="learning-archive.html" aria-label="Learning Archive"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5c3.5-.8 6.2.2 8 2.2v12c-1.8-2-4.5-3-8-2.2v-12Z"/><path d="M20 5.5c-3.5-.8-6.2.2-8 2.2v12c1.8-2 4.5-3 8-2.2v-12Z"/></svg></a>
+    <a href="#about" aria-label="About Mariam" data-side-target="about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.4-4.1 2.6-6.2 6.5-6.2s6.1 2.1 6.5 6.2"/></svg></a>
+    <a href="#voice" aria-label="Mariam Live Journey" data-side-target="voice"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-4M8 17V7m4 13V4m4 13V7m4 7v-4"/><path d="M7 21h10"/></svg></a>
+    <a href="#contact" aria-label="Contact" data-side-target="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m5 7 7 5 7-5"/></svg></a>
+  </nav>
+
   <header class="hero" id="top">
     <div class="hero-scene" aria-hidden="true">
       <img src="assets/images/founder-hero-scene.png" alt="">
@@ -251,19 +260,21 @@
     </section>
 
     <section class="voice-experience section" id="voice">
-      <div class="voice-feature reveal">
-        <div class="voice-visual" aria-hidden="true"><span>🎙</span><i></i><i></i><i></i></div>
-        <div>
-          <p class="eyebrow">Voice AI</p>
-          <h2 data-i18n="voiceSectionTitle">تحدث مع مريم قريباً</h2>
-          <p data-i18n="voiceSectionCopy">قريبًا سيتم تطوير تجربة صوتية تتيح للزائر التحدث مع Mariam AI بشكل أكثر طبيعية وتفاعلية.</p>
+      <div class="living-journey reveal">
+        <div class="living-orbit" aria-hidden="true"><i></i><i></i><i></i><span>⌁</span></div>
+        <div class="living-copy">
+          <div class="living-status"><b></b><span data-i18n="livingStatus">تجربة مستقبلية · قريبًا</span></div>
+          <p class="eyebrow">Mariam Live Journey</p>
+          <h2 data-i18n="voiceSectionTitle">تحدث مع مريم... واسمع الرحلة منها.</h2>
+          <p data-i18n="voiceSectionCopy">قريبًا ستتمكن من التحدث مع مريم، واختيار محطة من رحلتها لتروي لك التجربة، الطريق، وما تعلّمته خطوة بخطوة.</p>
+          <button class="living-button" id="livingJourneyButton" type="button"><span>◉</span><b data-i18n="livingButton">ابدأ الرحلة قريبًا</b><em>Coming Soon</em></button>
         </div>
-        <em>Coming Soon</em>
-      </div>
-      <div class="voice-phases reveal">
-        <article class="active"><span>01</span><h3>Text AI</h3><em>Current</em></article>
-        <article><span>02</span><h3>Voice AI</h3><em>Future</em></article>
-        <article><span>03</span><h3>Voice + Visual Mariam</h3><em>Future</em></article>
+        <div class="memory-path">
+          <article><span>01</span><div><h3 data-i18n="memoryLearning">بداية التعلّم</h3><p data-i18n="memoryLearningCopy">كيف بدأت المسارات تتصل ببعضها.</p></div></article>
+          <article><span>02</span><div><h3 data-i18n="memoryExperience">تجارب صنعت الرؤية</h3><p data-i18n="memoryExperienceCopy">مواقف وملاحظات غيّرت طريقة التفكير.</p></div></article>
+          <article><span>03</span><div><h3 data-i18n="memoryBuilding">من الفكرة إلى البناء</h3><p data-i18n="memoryBuildingCopy">كيف تتحول الأسئلة إلى مشاريع وتجارب.</p></div></article>
+          <article><span>04</span><div><h3 data-i18n="memoryFuture">الطريق القادم</h3><p data-i18n="memoryFutureCopy">رؤية مريم لما يمكن أن تصنعه التقنية.</p></div></article>
+        </div>
       </div>
     </section>
 

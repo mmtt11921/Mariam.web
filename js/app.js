@@ -13,7 +13,7 @@ const translations = {
     statHours: "volunteer hours", statProjects: "public projects", statYear: "graduation year", statPassion: "Passion", statBetter: "drives me forward", statLearning: "Learning", statNonstop: "never stops",
     languagesKicker: "Communication expands perspective", languagesTitle: "Languages", languagesCopy: "I learn languages because they open new doors to knowledge, communication, and understanding different cultures. I believe the ability to communicate with people from diverse backgrounds helps build better ideas and more impactful solutions.", arabicLanguage: "Arabic", arabicLevel: "Excellent", englishLanguage: "English", englishLevel: "Intermediate, progressing toward proficiency", germanLanguage: "German", germanLevel: "Beginner",
     learningKicker: "A record that grows with every step", learningTitle: "Learning Archive", learningCopy: "I document my continuous learning journey here, from courses and certificates to camps and programs that help me build my path step by step.", exploreLearning: "Explore Learning Archive",
-    voiceSectionTitle: "Talk with Mariam soon", voiceSectionCopy: "Soon, a voice experience will enable visitors to speak with Mariam AI in a more natural and interactive way.",
+    voiceSectionTitle: "Talk with Mariam... and hear the journey from her.", voiceSectionCopy: "Soon, you will be able to speak with Mariam and choose a milestone from her journey as she shares the experience, the path, and what she learned step by step.", livingStatus: "Future experience · Coming soon", livingButton: "Start the journey soon", memoryLearning: "The beginning of learning", memoryLearningCopy: "How different paths began connecting.", memoryExperience: "Experiences that shaped the vision", memoryExperienceCopy: "Moments and observations that changed the way of thinking.", memoryBuilding: "From idea to building", memoryBuildingCopy: "How questions become projects and experiments.", memoryFuture: "The road ahead", memoryFutureCopy: "Mariam’s vision for what technology can create.",
     futureKicker: "The journey continues...", futureTitle: "Every version opens a new door.", rVoice: "Direct voice conversations with Mariam AI.", rJourneyTitle: "Interactive Journey", rJourney: "A more interactive journey with evolving milestones and experiences.", rProjectsTitle: "New Projects", rProjects: "New projects announced when their identity and direction are ready.", rArchiveTitle: "Expanded Experience Archive", rArchive: "A wider archive of experience, learning, and initiatives.",
     companionCopy: "A future digital companion that guides visitors, explains journey milestones, and later connects with the voice experience.",
     ecosystemKicker: "Spaces for connection and sharing", ecosystemTitle: "Platforms & Communities", ecosystemCopy: "A digital ecosystem where I share knowledge, projects, and experiences that shape the journey.", linkedinCopy: "Experience, learning, and professional growth.", xCopy: "Ideas and observations from the journey.", instagramCopy: "Selected visual moments and content.", githubCopy: "Technology projects and experiments to explore.", hawatPlatformCopy: "A learning community sharing knowledge, opportunities, and experiences with Taibah University students.",
@@ -143,13 +143,34 @@ function closeVoiceModal() { voiceModal.classList.remove("open"); voiceModal.set
 document.getElementById("voiceHero").addEventListener("click", openVoiceModal);
 document.getElementById("closeVoiceModal").addEventListener("click", closeVoiceModal);
 voiceModal.addEventListener("click", event => { if (event.target === voiceModal) closeVoiceModal(); });
+document.getElementById("livingJourneyButton")?.addEventListener("click", openVoiceModal);
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const heroSceneImage = document.querySelector(".hero-scene img");
+const sideNavLinks = [...document.querySelectorAll(".side-nav [data-side-target]")];
+if (sideNavLinks.length) {
+  const updateSideNav = () => {
+    const marker = window.scrollY + window.innerHeight * .42;
+    let activeId = "top";
+    sideNavLinks.forEach(link => {
+      const section = document.getElementById(link.dataset.sideTarget);
+      if (section && section.offsetTop <= marker) activeId = section.id;
+    });
+    sideNavLinks.forEach(link => link.classList.toggle("active", link.dataset.sideTarget === activeId));
+  };
+  updateSideNav();
+  window.addEventListener("scroll", updateSideNav, { passive: true });
+  sideNavLinks.forEach(link => link.addEventListener("click", event => {
+    const section = document.getElementById(link.dataset.sideTarget);
+    if (!section) return;
+    event.preventDefault();
+    section.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+  }));
+}
 if (!reduceMotion && heroSceneImage) {
   window.addEventListener("scroll", () => {
     const offset = Math.min(window.scrollY * .055, 30);
-    heroSceneImage.style.transform = `scale(1.06) translate3d(0, ${offset}px, 0)`;
+    heroSceneImage.style.transform = `scale(1) translate3d(0, ${offset}px, 0)`;
   }, { passive: true });
 }
 if (!reduceMotion) {
