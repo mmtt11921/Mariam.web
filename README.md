@@ -1,19 +1,22 @@
-# Mariam Alharbi Founder Website V3
+# Mariam Alharbi Founder Website V4
 
-Production-ready premium founder website for Mariam Alharbi.
+Production-ready interactive founder journey for Mariam Alharbi.
 
 ## Project Structure
 
 ```text
 Mariam.web/
 ├── index.html
+├── learning-archive.html
 ├── README.md
 ├── vercel.json
 ├── .gitignore
 ├── css/
+│   ├── archive.css
 │   └── styles.css
 ├── js/
 │   ├── ai-config.js
+│   ├── archive.js
 │   ├── app.js
 │   └── contact-config.js
 └── assets/
@@ -31,8 +34,11 @@ Mariam.web/
 ## Source Files
 
 - `index.html`: Website content and semantic page structure.
-- `css/styles.css`: Responsive Founder V3 visual system, cinematic hero, glass cards, scroll storytelling, and mobile layouts.
+- `learning-archive.html`: Searchable and filterable learning archive.
+- `css/styles.css`: Responsive Founder V4 visual system, cinematic depth, journey storytelling, premium motion, and mobile-first layouts.
+- `css/archive.css`: Learning Archive page layout and responsive styles.
 - `js/app.js`: Language toggle, navigation, animations, Mariam AI runtime, and contact-form submission behavior.
+- `js/archive.js`: Learning Archive filters, search, and language switching.
 - `js/ai-config.js`: Mariam AI public knowledge base, privacy-safe routing configuration, and bilingual answers.
 - `js/contact-config.js`: Formspree public endpoint configuration and contact-form messages.
 - `assets/images/`: Optimized images used by the website and public gallery-ready assets.
