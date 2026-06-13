@@ -129,5 +129,21 @@ In the Vercel project:
 - Test the contact form.
 - Open every social link.
 - Test the Mariam AI suggested questions.
+
+## Mariam AI intent accuracy
+
+Mariam AI uses a lightweight local intent engine that supports Saudi and Gulf conversational Arabic, common spelling variations, English, privacy protection, short conversational follow-ups, and compound questions containing multiple intents.
+
+Run the intent regression suite before deployment:
+
+```bash
+node tests/ai-intent-tests.js
+node tests/ai-compound-tests.js
+node tests/ai-memory-tests.js
+```
+
+The included suites cover more than 100 public, private, dialect, typo, unrelated, multi-intent, and multi-turn memory cases. Add new real visitor questions to these suites as the assistant evolves.
+
+For the production API upgrade brief, see `docs/MARIAM_AI_V2_CLAUDE_BRIEF.md`.
 - Check desktop, tablet, and mobile layouts.
 - Confirm the public website shows `Q` only for the protected future brand.
