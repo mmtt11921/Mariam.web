@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="مريم الحربي مؤسسة وصانعة تقنية تبني مشاريع رقمية ومجتمعات تعليمية وتجربة ذكاء اصطناعي شخصية للمستقبل.">
   <title>Mariam Alharbi | Founder Journey V4</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20260618-design-atlas">
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">تجاوز إلى المحتوى</a>
   <div class="stars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="journey-video-layer" id="journeyVideoLayer" aria-hidden="true">
+    <video id="journeyVideo" autoplay muted loop playsinline preload="metadata" poster="assets/images/founder-hero-scene.png">
+      <source src="assets/images/mariam-founder-journey.mp4" type="video/mp4">
+    </video>
+    <div class="journey-video-tide"></div>
+  </div>
   <div class="scroll-mariam" id="walker" aria-hidden="true">
     <img src="assets/images/profile-photo.jpg" alt="">
   </div>
@@ -22,9 +30,11 @@
     <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="#journey" data-i18n="navJourney">الرحلة</a>
+      <a href="step-by-mira.html" data-i18n="navStepByMira">خطوة ميرا</a>
       <a href="#experience" data-i18n="navExperience">الخبرات</a>
       <a href="#leadership" data-i18n="navLeadership">القيادة</a>
       <a href="#mariam-ai" data-i18n="navAi">Mariam AI</a>
+      <a href="design-archive.html" data-i18n="navGallery">التصاميم</a>
       <a href="learning-archive.html" data-i18n="navLearning">مكتبة التعلم</a>
       <a href="#future" data-i18n="navFuture">المستقبل</a>
       <a href="#contact" data-i18n="navContact">تواصل</a>
@@ -38,82 +48,83 @@
     <a href="learning-archive.html" aria-label="Learning Archive"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5c3.5-.8 6.2.2 8 2.2v12c-1.8-2-4.5-3-8-2.2v-12Z"/><path d="M20 5.5c-3.5-.8-6.2.2-8 2.2v12c1.8-2 4.5-3 8-2.2v-12Z"/></svg></a>
     <a href="#about" aria-label="About Mariam" data-side-target="about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.4-4.1 2.6-6.2 6.5-6.2s6.1 2.1 6.5 6.2"/></svg></a>
     <a href="#voice" aria-label="Mariam Live Journey" data-side-target="voice"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-4M8 17V7m4 13V4m4 13V7m4 7v-4"/><path d="M7 21h10"/></svg></a>
+    <a href="design-archive.html" aria-label="Design Gallery"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="13" height="15" rx="2"/><path d="m8 15 2.8-3 2.2 2 1.8-1.8L17 15"/><circle cx="13.5" cy="9" r="1.2"/><path d="m8 5 1-2h11v14h-3"/></svg></a>
     <a href="#contact" aria-label="Contact" data-side-target="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m5 7 7 5 7-5"/></svg></a>
   </nav>
 
   <header class="hero" id="top">
     <div class="hero-scene" aria-hidden="true">
-      <img src="assets/images/founder-hero-scene.png" alt="">
       <div class="scene-orbit"></div>
       <div class="hello-bubble" data-i18n="heroBubble">مرحبًا بك في رحلة مريم ✨</div>
     </div>
     <div class="hero-content reveal">
       <p class="eyebrow" data-i18n="heroHello">أهلًا بك</p>
       <h1 data-i18n="heroTitle">أنا مريم الحربي</h1>
-      <p class="hero-belief" data-i18n="heroBelief">أؤمن أن التقنية تصنع أثرًا حقيقيًا.</p>
-      <p class="hero-lead" data-i18n="heroLead">أبني مشاريع تقنية ومجتمعات تعليمية وحلولًا رقمية للمستقبل.</p>
+      <p class="hero-belief" data-i18n="heroBelief">اخترت نظم المعلومات لأن طبيعة التخصص تناسب طريقة تفكيري؛ فهو يربط بين التقنية، والإدارة، والأنظمة، والبيانات، وتجربة المستخدم.</p>
+      <p class="hero-lead" data-i18n="heroLead"></p>
       <div class="hero-actions">
         <a class="btn btn-gold magnetic" href="#mariam-ai" data-i18n="askAI">اسأل مريم AI</a>
         <a class="btn btn-glass magnetic" href="#journey" data-i18n="exploreProjects">استكشف المشاريع</a>
       </div>
       <button class="voice-strip magnetic" id="voiceHero" type="button">
-        <span>🎙</span>
+        <span class="line-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="3" width="8" height="12" rx="4"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></svg></span>
         <strong data-i18n="voiceTitle">التجربة الصوتية قريبًا</strong>
-        <small data-i18n="voiceSmall">قريبًا ستتمكن من التحدث مع Mariam AI بالصوت.</small>
+        <small data-i18n="voiceSmall">نعمل على تطوير تجربة تتيح للزائر التحدث مع Mariam AI بصوت طبيعي وأكثر تفاعلًا.</small>
       </button>
     </div>
     <div class="scroll-cue" data-i18n="scrollCue">اسحب للاستكشاف</div>
   </header>
 
   <main id="main">
-    <section class="journey section" id="journey">
-      <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="journeyKicker">تعلم ← خبرة ← مجتمعات ← مشاريع ← مستقبل</p>
-        <h2 data-i18n="journeyTitle">الرحلة تبدأ من هنا ✨</h2>
+    <section class="journey venture-journey section" id="journey">
+      <span id="prototypes" class="anchor-target" aria-hidden="true"></span>
+      <div class="venture-intro reveal">
+        <div>
+          <p class="eyebrow" data-i18n="journeyKicker">المشاريع والنماذج الأولية</p>
+          <h2 data-i18n="journeyTitle">أفكار تتطور إلى تجارب رقمية.</h2>
+        </div>
+        <p data-i18n="ventureJourneyCopy">يوثّق هذا المسار ما تم إطلاقه، وما يجري اختباره، وما لا يزال قيد التطوير. لكل مشروع مرحلة واضحة، وهدف يتطور مع رحلة البناء.</p>
       </div>
-      <div class="project-showcase journey-cards">
-        <article class="project-card reveal">
-          <div class="project-number">1</div>
-          <div class="project-art robot"><span>AI</span></div>
-          <div class="project-meta">
-            <h3>Mariam AI</h3>
-            <em>Prototype</em>
-          </div>
-          <p data-i18n="pMariamAi">نموذج أولي يسمح بالتعرف على مريم ومشاريعها واهتماماتها من خلال محادثة ذكية.</p>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-number">2</div>
-          <div class="project-art steps"><span>↗</span></div>
-          <div class="project-meta">
-            <h3>Step by Mira</h3>
-            <em>In Development</em>
-          </div>
-          <p data-i18n="pStep">منصة تعليمية تساعد الأفراد على التقدم خطوة بخطوة في رحلتهم المهنية والتقنية.</p>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-number">3</div>
-          <div class="project-art future"><span>?</span></div>
-          <div class="project-meta">
-            <h3 data-i18n="pFutureTitle">Future Venture</h3>
-            <em>Coming Soon</em>
-          </div>
-          <p data-i18n="pFuture">المشروع القادم قيد التطوير. التفاصيل سيتم الإعلان عنها لاحقًا.</p>
-        </article>
-      </div>
-      <p class="journey-note reveal" data-i18n="journeyNote">الرحلة مستمرة... وانتظروا القادم.</p>
-    </section>
 
-    <section class="prototypes section" id="prototypes">
-      <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="prototypesKicker">مساحات حية تتطور مع الرحلة</p>
-        <h2 data-i18n="prototypesTitle">المشاريع والنماذج الأولية</h2>
+      <div class="venture-stages reveal" aria-label="Project journey stages">
+        <span class="active"><b>01</b><em data-i18n="stageLive">متاح الآن</em></span>
+        <span><b>02</b><em data-i18n="stagePrototype">قيد الاختبار</em></span>
+        <span><b>03</b><em data-i18n="stageBuilding">قيد التطوير</em></span>
+        <span><b>04</b><em data-i18n="stageFuture">خطوات قادمة</em></span>
       </div>
-      <div class="prototype-grid">
-        <article class="prototype-card reveal"><div class="prototype-icon">⌘</div><div class="prototype-head"><h3>Personal Website</h3><em data-i18n="developmentStatus">قيد التطوير</em></div><p data-i18n="websiteProjectCopy">موقعي الشخصي الذي يوثق رحلتي، خبراتي، مشاريعي، ومريم AI.</p></article>
-        <article class="prototype-card reveal"><div class="prototype-icon">AI</div><div class="prototype-head"><h3>Mariam AI</h3><em data-i18n="developmentStatus">قيد التطوير</em></div><p data-i18n="mariamProjectCopy">نموذج أولي يساعد الزائر على التعرف على مريم ورحلتها ومشاريعها من خلال محادثة تفاعلية.</p><small data-i18n="mariamProjectNote">مريم AI في نسخته الأولية، ويتطور باستمرار مع تطور رحلة مريم ومشاريعها.</small></article>
-        <a class="prototype-card reveal" href="https://mmtt11921.github.io/rafeeq-ai/" target="_blank" rel="noopener noreferrer"><div class="prototype-icon">R</div><div class="prototype-head"><h3>Rafeeq AI</h3><em data-i18n="developmentStatus">قيد التطوير</em></div><p data-i18n="rafeeqCopy">نموذج أولي قيد التطوير يستكشف كيف يمكن للذكاء الاصطناعي أن يقدم تجربة إرشاد رقمية أكثر إنسانية وتفاعلية.</p><b data-i18n="openPrototype">فتح النموذج ↗</b></a>
-        <article class="prototype-card reveal"><div class="prototype-icon">↗</div><div class="prototype-head"><h3>Step by Mira</h3><em data-i18n="developmentStatus">قيد التطوير</em></div><p data-i18n="stepProjectCopy">مساحة تعليمية قيد التطوير تساعد الأفراد على التقدم خطوة بخطوة في رحلتهم المهنية والتقنية.</p></article>
+
+      <div class="venture-grid">
+        <article class="venture-card venture-feature reveal">
+          <div class="venture-top"><span class="venture-index">01</span><em class="status-live" data-i18n="liveStatus">متاح الآن · يتطور باستمرار</em></div>
+          <div class="venture-symbol">⌘</div>
+          <div class="venture-copy"><p class="venture-type" data-i18n="stageLive">متاح الآن</p><h3>Personal Website</h3><p data-i18n="websiteProjectCopy">مساحة رقمية حية توثّق رحلتي وخبراتي ومشاريعي، وتتطور مع كل مرحلة جديدة.</p></div>
+        </article>
+
+        <article class="venture-card reveal">
+          <div class="venture-top"><span class="venture-index">02</span><em data-i18n="prototypeStatus">نسخة أولية</em></div>
+          <div class="venture-symbol">AI</div>
+          <div class="venture-copy"><p class="venture-type" data-i18n="stagePrototype">قيد الاختبار</p><h3>Mariam AI</h3><p data-i18n="mariamProjectCopy">مساعد تفاعلي يعرّف الزائر برحلتي ومشاريعي ورؤيتي من خلال محادثة ذكية.</p><small data-i18n="mariamProjectNote">النسخة الحالية أولية، وتُطوّر تدريجيًا مع توسّع المحتوى والتجربة.</small></div>
+        </article>
+
+        <a class="venture-card reveal" href="https://mmtt11921.github.io/rafeeq-ai/" target="_blank" rel="noopener noreferrer">
+          <div class="venture-top"><span class="venture-index">03</span><em data-i18n="prototypeStatus">نسخة أولية</em></div>
+          <div class="venture-symbol">R</div>
+          <div class="venture-copy"><p class="venture-type" data-i18n="stagePrototype">قيد الاختبار</p><h3>Rafeeq AI</h3><p data-i18n="rafeeqCopy">تجربة أولية تستكشف تقديم إرشاد رقمي أكثر إنسانية وتفاعلًا باستخدام الذكاء الاصطناعي.</p><b data-i18n="openPrototype">استكشف النموذج ↗</b></div>
+        </a>
+
+        <a class="venture-card reveal" href="https://hwaat-hub.vercel.app" target="_blank" rel="noopener noreferrer">
+          <div class="venture-top"><span class="venture-index">04</span><em data-i18n="hawatHubStatus">نموذج أولي · إطلاق 2026 / 1448هـ</em></div>
+          <div class="venture-symbol hawat-hub-icon">هـ</div>
+          <div class="venture-copy"><p class="venture-type" data-i18n="stageBuilding">قيد التطوير</p><h3 data-i18n="hawatHubTitle">هواة هب</h3><p data-i18n="hawatHubCopy">مساحة رقمية أولية لمجتمع هواة، تمهيدًا لإطلاقها مع بداية العام الدراسي الجديد 2026 / 1448هـ.</p><small data-i18n="hawatHubNote">ستتوسع المنصة تدريجيًا وفق خطة مؤسسة مريم الحربي.</small><b data-i18n="openHawatHub">استكشف النسخة الأولية ↗</b></div>
+        </a>
+
+        <article class="venture-card venture-future reveal">
+          <div class="venture-top"><span class="venture-index">05</span><em data-i18n="futureStatus">لاحقًا</em></div>
+          <div class="venture-symbol">+</div>
+          <div class="venture-copy"><p class="venture-type" data-i18n="stageFuture">خطوات قادمة</p><h3 data-i18n="pFutureTitle">مشروع مستقبلي</h3><p data-i18n="pFuture">أفكار جديدة تتشكل بهدوء، وسيتم مشاركة ما يناسب منها عندما تصبح جاهزة.</p></div>
+        </article>
       </div>
+      <p class="journey-note reveal" data-i18n="journeyNote">كل نسخة خطوة، وكل خطوة تفتح مساحة جديدة للبناء.</p>
     </section>
 
     <section class="founder-story section" id="about">
@@ -132,10 +143,111 @@
       </div>
     </section>
 
+    <section class="learning-system section" id="learning-system">
+      <div class="learning-system-shell reveal">
+        <div class="learning-system-intro">
+          <p class="eyebrow" data-i18n="learningSystemKicker">Founder Learning System</p>
+          <h2 data-i18n="learningSystemTitle">منهجي في التعلم</h2>
+          <div class="learning-system-copy">
+            <p data-i18n="learningSystemCopy1">اخترت نظم المعلومات لأن طبيعة التخصص تناسب طريقة تفكيري؛ فهو يربط بين التقنية، والإدارة، والأنظمة، والبيانات، وتجربة المستخدم.</p>
+            <p data-i18n="learningSystemCopy2">ومع الوقت أصبحت أرى أن بناء أي تطبيق أو منتج رقمي منافس لا يعتمد على مهارة واحدة فقط. فحتى أبني حلًا جيدًا، أحتاج أن أفهم كيف يعمل النظام، وكيف يستخدمه الناس، وكيف تُحمى بياناته، وكيف يمكن تطويره بالذكاء الاصطناعي ليواكب العصر.</p>
+            <p data-i18n="learningSystemCopy3">لذلك أتعلم مجالات تبدو مختلفة، لكنها بالنسبة لي أجزاء من منظومة واحدة.</p>
+          </div>
+        </div>
+
+        <div class="learning-system-core">
+          <span class="system-badge" data-i18n="weeklyConstants">ثوابت أسبوعية</span>
+          <div class="pillar-grid" aria-label="Core learning pillars">
+            <article class="pillar-card">
+              <span class="pillar-icon">01</span>
+              <h3 data-i18n="managementSystems">الإدارة وفهم الأنظمة</h3>
+              <p data-i18n="managementSystemsCopy">لفهم طريقة عمل البيئات والعمليات واتخاذ القرار.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-icon">02</span>
+              <h3 data-i18n="informationSecurity">أمن المعلومات</h3>
+              <p data-i18n="informationSecurityCopy">لحماية البيانات وبناء حلول أكثر أمانًا وثقة.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-icon">03</span>
+              <h3 data-i18n="artificialIntelligence">الذكاء الاصطناعي</h3>
+              <p data-i18n="artificialIntelligenceCopy">لمواكبة العصر وبناء حلول أذكى وأكثر قابلية للتطور.</p>
+            </article>
+          </div>
+
+          <div class="flex-focus">
+            <div>
+              <span data-i18n="flexibleFocus">تتغير حسب أولوية الأسبوع</span>
+              <strong data-i18n="flexibleFocusTitle">التركيز المرن</strong>
+            </div>
+            <div class="flex-slots">
+              <em data-i18n="devProgramming">تطوير / برمجة</em>
+              <em data-i18n="designUx">تصميم / تجربة مستخدم</em>
+            </div>
+            <div class="flex-examples" aria-label="Flexible examples">
+              <small data-i18n="flexibleExamples">أمثلة مرنة</small>
+              <b>Step by Mira</b>
+              <b data-i18n="graphicDesign">Graphic Design</b>
+              <b data-i18n="projectBuilding">Project Building</b>
+              <b data-i18n="contentCreation">Content Creation</b>
+            </div>
+          </div>
+
+          <div class="language-inline" aria-label="Languages in the learning system">
+            <div>
+              <span class="system-badge" data-i18n="languagesKicker">التواصل يوسّع الرؤية</span>
+              <strong data-i18n="languagesTitle">اللغات ضمن رحلة التعلم</strong>
+              <p data-i18n="languagesCopy">أتعلم اللغات لأنها تفتح أبوابًا جديدة للمعرفة والتواصل وفهم الثقافات المختلفة، وهذا يدعم بناء أفكار وحلول أكثر تأثيرًا.</p>
+            </div>
+            <div class="language-mini-grid">
+              <span><b>AR</b><em data-i18n="arabicLevel">ممتاز</em></span>
+              <span><b>EN</b><em data-i18n="englishLevel">متوسط، وفي طريقها للاحتراف</em></span>
+              <span><b>DE</b><em data-i18n="germanLevel">مبتدئ</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="monthly-system reveal">
+        <div class="monthly-head">
+          <p class="eyebrow" data-i18n="monthlyExampleKicker">Monthly Rhythm</p>
+          <h3 data-i18n="monthlyExampleTitle">مثال شهر عملي</h3>
+          <p data-i18n="monthlyExampleCopy">تبقى الثوابت حاضرة، ويتغير التركيز المرن حسب المرحلة والأولوية.</p>
+        </div>
+        <div class="month-roadmap" aria-label="Monthly learning roadmap">
+          <article class="month-card">
+            <span data-i18n="week1">الأسبوع 1</span>
+            <p><b data-i18n="fixedLabel">ثابت:</b> <em data-i18n="fixedStack">الإدارة + أمن المعلومات + الذكاء الاصطناعي</em></p>
+            <p><b data-i18n="addLabel">إضافة:</b> <em data-i18n="week1Add">تصميم جرافيكي + Step by Mira</em></p>
+          </article>
+          <article class="month-card">
+            <span data-i18n="week2">الأسبوع 2</span>
+            <p><b data-i18n="fixedLabel">ثابت:</b> <em data-i18n="fixedStack">الإدارة + أمن المعلومات + الذكاء الاصطناعي</em></p>
+            <p><b data-i18n="addLabel">إضافة:</b> <em data-i18n="week2Add">برمجة + تجربة المستخدم</em></p>
+          </article>
+          <article class="month-card">
+            <span data-i18n="week3">الأسبوع 3</span>
+            <p><b data-i18n="fixedLabel">ثابت:</b> <em data-i18n="fixedStack">الإدارة + أمن المعلومات + الذكاء الاصطناعي</em></p>
+            <p><b data-i18n="addLabel">إضافة:</b> <em data-i18n="week3Add">بناء مشروع + محتوى</em></p>
+          </article>
+          <article class="month-card">
+            <span data-i18n="week4">الأسبوع 4</span>
+            <p><b data-i18n="fixedLabel">ثابت:</b> <em data-i18n="fixedStack">الإدارة + أمن المعلومات + الذكاء الاصطناعي</em></p>
+            <p><b data-i18n="addLabel">إضافة:</b> <em data-i18n="week4Add">مراجعة + تطوير النموذج الأولي</em></p>
+          </article>
+        </div>
+      </div>
+
+      <div class="learning-system-close reveal">
+        <p data-i18n="learningSystemClose1">هذا الأسلوب لم يتكوّن بسرعة؛ احتاج سنوات من التجربة والمحاولة حتى أصبح أكثر قدرة على توزيع الوقت والطاقة بين ما هو ثابت وما يتغير حسب المرحلة.</p>
+        <p data-i18n="learningSystemClose2">الفكرة ليست أن أتعلم كل شيء في وقت واحد، بل أن أبني مسارًا مرنًا يساعدني على الاستمرار والوصول لأهدافي خطوة بخطوة.</p>
+      </div>
+    </section>
+
     <section class="dashboard section" id="experience">
       <div class="dash-grid">
         <article class="dash-panel experience-panel reveal">
-          <div class="panel-title"><span>💼</span><h2 data-i18n="experienceTitle">الخبرات المهنية</h2></div>
+          <div class="panel-title"><span class="line-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 12h18M10 12v2h4v-2"/></svg></span><h2 data-i18n="experienceTitle">الخبرات المهنية</h2></div>
           <div class="timeline">
             <article class="exp-card">
               <div class="company-mark awe-mark">AWE</div>
@@ -193,18 +305,46 @@
         </article>
 
         <article class="dash-panel leadership-panel reveal" id="leadership">
-          <div class="panel-title"><span>🦋</span><h2 data-i18n="leadershipTitle">التطوع والقيادة</h2></div>
+          <div class="panel-title"><span class="line-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20v-8M12 12C8 12 5 9 5 5c4 0 7 3 7 7ZM12 12c4 0 7-3 7-7-4 0-7 3-7 7Z"/><path d="M8 20h8"/></svg></span><h2 data-i18n="leadershipTitle">التطوع والقيادة</h2></div>
           <div class="leadership-list">
-            <article class="lead-card"><span>🤲</span><h3 data-i18n="basmahTitle">منصة بصمة</h3><p data-i18n="basmahCopy">مشاركة تطوعية في مبادرات إنسانية ومجتمعية متنوعة.</p></article>
-            <article class="lead-card"><span>👥</span><h3 data-i18n="eventsTitle">تنظيم الفعاليات</h3><p data-i18n="eventsCopy">تنظيم العمل، خدمة الزوار، ومساندة الفرق في الفعاليات.</p></article>
-            <article class="lead-card"><span>🚀</span><h3 data-i18n="volunteerTitle">الأعمال التطوعية</h3><p data-i18n="volunteerCopy">مشرفة فريق التنظيم في إحدى الفعاليات التاريخية التي تم تنظيمها من قبل بصمة.</p></article>
+            <article class="lead-card basmah-card"><span class="basmah-mark" aria-hidden="true"><svg viewBox="0 0 64 64" role="img"><path d="M32 8c-12.2 0-22 9.8-22 22 0 7.1-1.7 13.4-5 18.8"/><path d="M32 15c-8.3 0-15 6.7-15 15 0 9.2-2.4 17.3-7.2 24.1"/><path d="M32 22a8 8 0 0 0-8 8c0 10.9-2.6 20-7.9 27.2"/><path d="M32 8c12.2 0 22 9.8 22 22 0 7.1 1.7 13.4 5 18.8"/><path d="M32 15c8.3 0 15 6.7 15 15 0 9.2 2.4 17.3 7.2 24.1"/><path d="M32 22a8 8 0 0 1 8 8c0 10.9 2.6 20 7.9 27.2"/><path d="M32 29v8c0 8.8-1.7 16.2-5 22"/><path d="M32 44c.4 5.2 1.8 10.2 4.1 15"/></svg></span><h3 data-i18n="basmahTitle">منصة بصمة</h3><p data-i18n="basmahCopy">مشاركة تطوعية في مبادرات إنسانية ومجتمعية متنوعة.</p></article>
+            <article class="lead-card"><span class="line-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20c.4-4.4 2.2-6.5 5.5-6.5s5.1 2.1 5.5 6.5M13 15c1-.8 2.2-1.2 3.7-1.2 3 0 4.5 2 4.8 6.2"/></svg></span><h3 data-i18n="eventsTitle">تنظيم الفعاليات</h3><p data-i18n="eventsCopy">تنظيم العمل، خدمة الزوار، ومساندة الفرق في الفعاليات.</p></article>
+            <article class="lead-card"><span class="line-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c5-3.3 8-7.4 8-12V5l-8-3-8 3v4c0 4.6 3 8.7 8 12Z"/><path d="m8.5 11.5 2.2 2.2 4.8-5"/></svg></span><h3 data-i18n="volunteerTitle">الأعمال التطوعية</h3><p data-i18n="volunteerCopy">مشرفة فريق التنظيم في إحدى الفعاليات التاريخية التي تم تنظيمها من قبل بصمة.</p></article>
           </div>
         </article>
 
         <article class="dash-panel ai-panel-card reveal" id="mariam-ai">
           <div class="ai-card-head">
-            <h2>Mariam AI ✨</h2>
+            <div><p class="eyebrow">Personal Intelligence Layer</p><h2>Mariam AI ✨</h2></div>
             <div class="ai-status"><span></span><b data-i18n="aiOnline">متصل</b><em>Prototype</em></div>
+          </div>
+          <div class="ai-host" id="aiHost" aria-label="Mariam AI digital host">
+            <div class="ai-host-words" aria-hidden="true">
+              <span data-i18n="aiWordJourney">رحلتي</span>
+              <span data-i18n="aiWordProjects">مشاريعي</span>
+              <span data-i18n="aiWordVision">رؤيتي</span>
+            </div>
+            <div class="ai-host-character" aria-hidden="true">
+              <svg viewBox="0 0 190 230">
+                <defs><linearGradient id="hostMetal" x1="0" x2="1"><stop stop-color="#3b2025"/><stop offset=".5" stop-color="#f0d79a"/><stop offset="1" stop-color="#641e2c"/></linearGradient></defs>
+                <path class="host-hair" d="M58 77c1-37 17-55 39-55 29 0 44 25 41 61l-9 37H65Z"/>
+                <ellipse class="host-face" cx="98" cy="74" rx="31" ry="37"/>
+                <path class="host-fringe" d="M68 66c6-32 50-39 61-4-18-4-33-12-45-24-2 13-7 22-16 28Z"/>
+                <path class="host-eye" d="M80 76h10M106 76h10"/>
+                <path class="host-smile" d="M90 91c5 4 11 4 16 0"/>
+                <path class="host-neck" d="M88 108v14h20v-14"/>
+                <path class="host-body" d="M56 209c3-53 12-83 33-91h18c22 8 31 38 34 91Z"/>
+                <path class="host-panel" d="M80 147h37v35H80zM88 157h21M88 166h13"/>
+                <path class="host-arm-left" d="M65 137c-16 13-22 33-24 56"/>
+                <path class="host-wave-arm" d="M130 137c17-8 24-23 26-40"/>
+                <path class="host-wave-hand" d="M156 98c-2-12-1-23 2-34m-2 34c6-8 11-16 14-25m-14 25c10-4 17-9 22-15m-22 15c9 1 17 0 24-3"/>
+                <circle class="host-core" cx="98" cy="195" r="7"/>
+              </svg>
+            </div>
+            <div class="ai-host-greeting" id="aiHostGreeting">
+              <strong data-i18n="aiGreeting">السلام عليكم، يا هلا وسهلا في رحلة مريم.</strong>
+              <small data-i18n="aiGreetingHint">اسألني عن أهم المحطات، المشاريع، أو الرؤية المستقبلية.</small>
+            </div>
           </div>
           <p data-i18n="aiPrototype">النموذج الأولي الحالي. وسيتم تطويره مستقبلًا ليشمل الصوت والصورة والتفاعل المباشر.</p>
           <div class="chip-list" data-i18n-list="chips">
@@ -217,33 +357,32 @@
             <button class="question" type="button" data-topic="projects">✨ وش المشاريع اللي تبنينها؟</button>
           </div>
           <div class="ai-response" id="aiResponse" aria-live="polite" data-i18n="aiDefault">اكتب سؤالك هنا أو اختر أحد الاقتراحات.</div>
+          <div class="ai-typing" id="aiTyping" hidden aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="voice-transcript" id="voiceTranscript" hidden>
+            <small data-i18n="voiceTranscriptHint">هذا ما سمعته، يمكنك تعديله قبل الإرسال.</small>
+            <textarea id="voiceTranscriptText" rows="2"></textarea>
+            <div><button id="voiceTranscriptSend" type="button" data-i18n="voiceTranscriptSend">إرسال</button><button id="voiceTranscriptCancel" type="button" data-i18n="voiceTranscriptCancel">إلغاء</button></div>
+          </div>
           <form class="ai-form" id="aiForm">
             <input id="aiQuestion" type="text" autocomplete="off" aria-label="Ask Mariam AI" placeholder="اكتب سؤالك هنا..." required>
+            <button class="mic-btn" id="aiMic" type="button" aria-label="التحدث مع Mariam AI" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="3" width="8" height="12" rx="4"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></svg></button>
             <button class="send-btn" type="submit" aria-label="Send">➤</button>
           </form>
+          <div class="ai-voice-tools">
+            <span id="aiMicStatus" data-i18n="micIdle">اضغط الميكروفون للتحدث</span>
+            <button id="voiceReplyToggle" type="button" aria-pressed="false" data-i18n="voiceReplyOff">الرد الصوتي: متوقف</button>
+            <button id="stopVoiceReply" type="button" hidden data-i18n="stopVoiceReply">إيقاف القراءة</button>
+          </div>
           <small class="ai-evolving-note" data-i18n="aiEvolvingNote">مريم AI في نسخته الأولية، ويتطور باستمرار مع تطور رحلتي ومشاريعي.</small>
         </article>
       </div>
 
       <div class="stats-strip reveal" aria-label="Founder highlights">
         <div><strong>+500</strong><span data-i18n="statHours">ساعة تطوعية</span></div>
-        <div><strong>4</strong><span data-i18n="statProjects">مشاريع قيد التطوير</span></div>
+        <div><strong>5</strong><span data-i18n="statProjects">مشاريع ونماذج قيد التطوير</span></div>
         <div><strong>2026</strong><span data-i18n="statYear">سنة التخرج</span></div>
         <div><strong data-i18n="statPassion">شغف</strong><span data-i18n="statBetter">يدفعني للأفضل</span></div>
         <div><strong data-i18n="statLearning">تعلّم</strong><span data-i18n="statNonstop">بلا توقف</span></div>
-      </div>
-    </section>
-
-    <section class="languages section" id="languages">
-      <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="languagesKicker">التواصل يوسّع الرؤية</p>
-        <h2 data-i18n="languagesTitle">اللغات</h2>
-        <p data-i18n="languagesCopy">أتعلم اللغات لأنها تفتح أبوابًا جديدة للمعرفة، والتواصل، وفهم الثقافات المختلفة. وأؤمن أن القدرة على التواصل مع أشخاص من خلفيات متنوعة تساعد على بناء أفكار أفضل وحلول أكثر تأثيرًا.</p>
-      </div>
-      <div class="language-grid">
-        <article class="language-card reveal"><span>AR</span><h3 data-i18n="arabicLanguage">العربية</h3><strong data-i18n="arabicLevel">ممتاز</strong><div class="language-meter"><i style="--level:100%"></i></div></article>
-        <article class="language-card reveal"><span>EN</span><h3 data-i18n="englishLanguage">الإنجليزية</h3><strong data-i18n="englishLevel">متوسط، وفي طريقها للاحتراف</strong><div class="language-meter"><i style="--level:66%"></i></div></article>
-        <article class="language-card reveal"><span>DE</span><h3 data-i18n="germanLanguage">الألمانية</h3><strong data-i18n="germanLevel">مبتدئ</strong><div class="language-meter"><i style="--level:25%"></i></div></article>
       </div>
     </section>
 
@@ -259,15 +398,50 @@
       </div>
     </section>
 
+    <section class="design-gallery section" id="design-gallery">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="galleryKicker">التصميم عبر قطاعات مختلفة</p>
+        <h2 data-i18n="galleryTitle">أرشيف تصميم مبني على فهم المجال.</h2>
+        <p data-i18n="galleryCopy">استكشاف لكيفية تغيّر الهوية والتجربة والرسالة البصرية بين الصحة، التقنية، الأعمال، والضيافة.</p>
+      </div>
+      <div class="design-preview reveal">
+        <a class="design-explorer" href="design-archive.html" aria-label="Open design archive">
+          <div class="ipad-frame" aria-hidden="true">
+            <div class="ipad-camera"></div>
+            <div class="ipad-screen">
+              <div class="screen-top">
+                <span>Design Archive</span>
+                <b>FIELDS</b>
+              </div>
+              <div class="field-carousel">
+                <article class="field-card field-health"><span>01</span><strong>Healthcare</strong><small>Trust & clarity</small></article>
+                <article class="field-card field-food"><span>02</span><strong>Restaurants</strong><small>Desire & menu flow</small></article>
+                <article class="field-card field-hotel"><span>03</span><strong>Hotels</strong><small>Luxury experience</small></article>
+                <article class="field-card field-real"><span>04</span><strong>Real Estate</strong><small>Value & lifestyle</small></article>
+                <article class="field-card field-law"><span>05</span><strong>Law Firms</strong><small>Trust & credibility</small></article>
+              </div>
+            </div>
+          </div>
+          <div class="archive-insight" data-ar="الصحة، المطاعم، الفنادق، العقار، والقانون؛ لكل مجال لغة تصميم مختلفة." data-en="Healthcare, restaurants, hotels, real estate, and law; each field has its own design language.">الصحة، المطاعم، الفنادق، العقار، والقانون؛ لكل مجال لغة تصميم مختلفة.</div>
+        </a>
+        <div class="design-preview-copy">
+          <span class="line-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="13" height="15" rx="2"/><path d="m8 15 2.8-3 2.2 2 1.8-1.8L17 15"/><circle cx="13.5" cy="9" r="1.2"/><path d="m8 5 1-2h11v14h-3"/></svg></span>
+          <h3 data-i18n="galleryArchiveTitle">أرشيف التصميم</h3>
+          <p data-i18n="galleryNote">ملف أعمال قطاعي يوضح كيف يصنع التصميم قيمة مختلفة في كل مجال.</p>
+          <a class="btn btn-gold" href="design-archive.html" data-i18n="openGallery">استعرض أرشيف التصميم</a>
+        </div>
+      </div>
+    </section>
+
     <section class="voice-experience section" id="voice">
       <div class="living-journey reveal">
         <div class="living-orbit" aria-hidden="true"><i></i><i></i><i></i><span>⌁</span></div>
         <div class="living-copy">
-          <div class="living-status"><b></b><span data-i18n="livingStatus">تجربة مستقبلية · قريبًا</span></div>
-          <p class="eyebrow">Mariam Live Journey</p>
-          <h2 data-i18n="voiceSectionTitle">تحدث مع مريم... واسمع الرحلة منها.</h2>
-          <p data-i18n="voiceSectionCopy">قريبًا ستتمكن من التحدث مع مريم، واختيار محطة من رحلتها لتروي لك التجربة، الطريق، وما تعلّمته خطوة بخطوة.</p>
-          <button class="living-button" id="livingJourneyButton" type="button"><span>◉</span><b data-i18n="livingButton">ابدأ الرحلة قريبًا</b><em>Coming Soon</em></button>
+          <div class="living-status"><b></b><span data-i18n="livingStatus">قريبًا</span></div>
+          <p class="eyebrow">Talk to Mariam</p>
+          <h2 data-i18n="voiceSectionTitle">تحدث مع مريم قريبًا.</h2>
+          <p data-i18n="voiceSectionCopy">نعمل على تطوير تجربة صوتية تجعل التفاعل مع Mariam AI أكثر طبيعية ووضوحًا. حاليًا التجربة قيد التطوير، والقادم سيكون أذكى وأكثر قربًا.</p>
+          <button class="living-button coming-soon" id="livingJourneyButton" type="button"><span>◉</span><b data-i18n="livingButton">قريبًا</b><em>Voice AI</em></button>
         </div>
         <div class="memory-path">
           <article><span>01</span><div><h3 data-i18n="memoryLearning">بداية التعلّم</h3><p data-i18n="memoryLearningCopy">كيف بدأت المسارات تتصل ببعضها.</p></div></article>
@@ -279,15 +453,19 @@
     </section>
 
     <section class="future-road section" id="future">
-      <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="futureKicker">الرحلة مستمرة...</p>
-        <h2 data-i18n="futureTitle">كل نسخة تفتح بابًا جديدًا.</h2>
+      <div class="vision-intro reveal">
+        <div>
+          <p class="eyebrow" data-i18n="futureKicker">رؤية طويلة المدى</p>
+          <h2 data-i18n="futureTitle">بناء منظومة رقمية تنمو مع الفكرة والأثر.</h2>
+        </div>
+        <p data-i18n="futureLead">الرؤية ليست مشروعًا واحدًا، بل منظومة تجمع المعرفة، التجربة، الذكاء الاصطناعي، والمجتمعات في مسار يتطور بوعي.</p>
       </div>
-      <div class="roadmap">
-        <article class="road-card reveal"><span>01</span><h3>Voice AI</h3><p data-i18n="rVoice">محادثة صوتية مباشرة مع Mariam AI.</p></article>
-        <article class="road-card reveal"><span>02</span><h3 data-i18n="rJourneyTitle">Interactive Journey</h3><p data-i18n="rJourney">رحلة أكثر تفاعلًا مع محطات وتجارب متجددة.</p></article>
-        <article class="road-card reveal"><span>03</span><h3 data-i18n="rProjectsTitle">New Projects</h3><p data-i18n="rProjects">مشاريع جديدة تُعلن عند اكتمال هويتها واتجاهها.</p></article>
-        <article class="road-card reveal"><span>04</span><h3 data-i18n="rArchiveTitle">Expanded Experience Archive</h3><p data-i18n="rArchive">أرشيف أوسع للخبرات والتعلم والمبادرات.</p></article>
+      <div class="vision-system reveal">
+        <div class="vision-core"><span>M</span><strong data-i18n="visionCore">منظومة مريم الرقمية</strong><small data-i18n="visionCoreCopy">تتعلم، تتطور، وتفتح مسارات جديدة.</small></div>
+        <article><span>01</span><h3 data-i18n="visionIntelligence">ذكاء أكثر إنسانية</h3><p data-i18n="rVoice">تجارب نصية وصوتية تجعل التفاعل مع Mariam AI أكثر طبيعية وفائدة.</p></article>
+        <article><span>02</span><h3 data-i18n="rJourneyTitle">رحلة تفاعلية</h3><p data-i18n="rJourney">تحويل الخبرات والتعلم والمشاريع إلى تجربة رقمية يمكن استكشافها.</p></article>
+        <article><span>03</span><h3 data-i18n="visionBuild">مشاريع تصنع أثرًا</h3><p data-i18n="rProjects">تطوير مشاريع جديدة والإعلان عنها عندما تصبح الرؤية والهوية جاهزتين.</p></article>
+        <article><span>04</span><h3 data-i18n="visionCommunity">معرفة ومجتمعات</h3><p data-i18n="rArchive">توسيع أرشيف التعلم والمبادرات والمساحات التي تشارك المعرفة.</p></article>
       </div>
       <div class="companion-teaser reveal">
         <div class="companion-avatar"><img src="assets/images/profile-photo.jpg" alt=""></div>
@@ -310,14 +488,14 @@
         <a class="ecosystem-card reveal" href="https://x.com/MiraVibesX" target="_blank" rel="noopener noreferrer"><span>𝕏</span><h3>X</h3><p data-i18n="xCopy">أفكار وملاحظات من الرحلة.</p><b>↗</b></a>
         <a class="ecosystem-card reveal" href="https://www.instagram.com/miravibest/" target="_blank" rel="noopener noreferrer"><span>◎</span><h3>Instagram</h3><p data-i18n="instagramCopy">لحظات بصرية ومحتوى مختار.</p><b>↗</b></a>
         <a class="ecosystem-card reveal" href="https://github.com/mmtt11921" target="_blank" rel="noopener noreferrer"><span>⌘</span><h3>GitHub</h3><p data-i18n="githubCopy">مشاريع وتجارب تقنية قابلة للاستكشاف.</p><b>↗</b></a>
-        <a class="ecosystem-card hawat-card reveal" href="https://hwaat-hub.vercel.app" target="_blank" rel="noopener noreferrer"><span>هـ</span><h3>هوّاة</h3><p data-i18n="hawatPlatformCopy">مجتمع تعليمي قيد التطوير، يُخطط لإطلاقه مع بداية العام الدراسي والتوسع به وفق خطة مؤسسة مريم الحربي.</p><b>↗</b></a>
+        <a class="ecosystem-card hawat-card reveal" href="https://hwaat-hub.vercel.app" target="_blank" rel="noopener noreferrer"><span>هـ</span><h3>هوّاة</h3><p data-i18n="hawatPlatformCopy">مجتمع تعليمي قيد التطوير، يُخطط لإطلاقه مع بداية العام الدراسي الجديد 2026 / 1448هـ والتوسع به وفق خطة مؤسسة مريم الحربي.</p><b>↗</b></a>
       </div>
     </section>
 
     <section class="contact section" id="contact">
       <div class="contact-copy reveal">
         <p class="eyebrow" data-i18n="contactKicker">لِنصنع المستقبل معًا</p>
-        <h2 data-i18n="contactTitle">تواصلي معي.</h2>
+        <h2 data-i18n="contactTitle">تواصل معي.</h2>
         <p class="contact-lead" data-i18n="contactLead">للتعاون، تبادل الأفكار، أو الحديث عن رحلة التعلم والمشاريع.</p>
         <div class="contact-socials"><a href="https://www.linkedin.com/in/mmtt11921/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://x.com/MiraVibesX" target="_blank" rel="noopener noreferrer">X <span>↗</span></a><a href="https://www.instagram.com/miravibest/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a><a href="https://github.com/mmtt11921" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://t.me/Hwaat_32178" target="_blank" rel="noopener noreferrer">هوّاة <span>↗</span></a></div>
       </div>
@@ -341,14 +519,17 @@
     <div class="modal-card">
       <button id="closeVoiceModal" type="button" aria-label="Close">×</button>
       <span class="pulse-dot"></span>
-      <h3 data-i18n="voiceModalTitle">قريبًا...</h3>
-      <p data-i18n="voiceModalCopy">نعمل على تطوير Mariam AI ليتمكن الزوار من التحدث معه صوتيًا والتعرف على مريم بطريقة أكثر تفاعلية.</p>
+      <h3 data-i18n="voiceModalTitle">التجربة الصوتية قريبًا</h3>
+      <p data-i18n="voiceModalCopy">نعمل على تطوير تجربة صوتية مستقبلية تجعل التعرف على رحلة مريم أكثر تفاعلية وطبيعية.</p>
     </div>
   </div>
 
   <script src="js/ai-config.js"></script>
   <script src="js/ai-engine.js"></script>
+  <script src="js/dialect-normalizer.js"></script>
+  <script src="js/ai-conversation.js"></script>
+  <script src="js/voice-layer.js"></script>
   <script src="js/contact-config.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=20260618-2"></script>
 </body>
 </html>

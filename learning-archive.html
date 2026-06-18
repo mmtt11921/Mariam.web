@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="مكتبة تعلم مريم الحربي: شهادات، دورات، معسكرات، وبرامج تعلم مستمرة.">
   <title>Mariam Alharbi | Learning Archive</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/archive.css">
+  <link rel="stylesheet" href="css/styles.css?v=20260615-8">
+  <link rel="stylesheet" href="css/archive.css?v=20260616-1">
 </head>
 <body class="archive-page">
+  <div class="learning-film" aria-hidden="true"></div>
   <div class="stars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
   <nav class="nav" aria-label="Learning Archive navigation">
     <a class="brand" href="index.html"><span>✤</span> Mariam Alharbi ✨</a>
@@ -20,10 +23,14 @@
 
   <main>
     <header class="archive-hero">
+      <div class="learning-hero-scene" aria-hidden="true"></div>
+      <div class="archive-hero-copy">
       <p class="eyebrow" data-archive-i18n="kicker">رحلة التعلم المستمر</p>
       <h1 data-archive-i18n="title">مكتبة التعلم</h1>
-      <p data-archive-i18n="copy">أرشيف يتطور مع كل دورة وشهادة ومعسكر وبرنامج تعلم جديد، ويوثق بناء المسار خطوة بخطوة.</p>
-      <div class="archive-summary"><span><strong id="recordCount">9</strong><small data-archive-i18n="records">سجلات تعلم</small></span><span><strong>8</strong><small data-archive-i18n="categories">فئات</small></span><span><strong>∞</strong><small data-archive-i18n="continuing">رحلة مستمرة</small></span></div>
+      <p data-archive-i18n="copy">مساحة مختصرة توثق المجالات التقنية التي أتعلمها حاليًا لدعم مشاريعي وفهمي للأنظمة، بدون مبالغة أو تكديس.</p>
+      <div class="archive-summary"><span><strong id="recordCount">5</strong><small data-archive-i18n="records">سجلات تعلم</small></span><span><strong>5</strong><small data-archive-i18n="categories">فئات</small></span><span><strong>∞</strong><small data-archive-i18n="continuing">رحلة مستمرة</small></span></div>
+      </div>
+      <div class="learning-hero-orbit" aria-hidden="true"><span>∞</span><i></i><i></i></div>
     </header>
 
     <section class="archive-tools" aria-label="Archive filters">
@@ -35,10 +42,6 @@
         <button data-filter="Information Systems">Information Systems</button>
         <button data-filter="UX / UI">UX / UI</button>
         <button data-filter="Programming">Programming</button>
-        <button data-filter="Leadership">Leadership</button>
-        <button data-filter="Entrepreneurship">Entrepreneurship</button>
-        <button data-filter="Languages">Languages</button>
-        <button data-filter="Other">Other</button>
       </div>
     </section>
 
@@ -48,10 +51,6 @@
       <article class="archive-card" data-category="Information Systems" data-search="information systems"><div class="archive-mark">IS</div><span>Information Systems</span><h2 data-archive-i18n="isTitle">سجل نظم المعلومات</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="progress">In Progress</em><b>Program</b></footer></article>
       <article class="archive-card" data-category="UX / UI" data-search="ux ui user experience"><div class="archive-mark">UX</div><span>UX / UI</span><h2 data-archive-i18n="uxTitle">سجل تجربة المستخدم والتصميم</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="planned">Planned</em><b>Course</b></footer></article>
       <article class="archive-card" data-category="Programming" data-search="programming software development"><div class="archive-mark">&lt;/&gt;</div><span>Programming</span><h2 data-archive-i18n="programmingTitle">سجل البرمجة وتطوير البرمجيات</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="progress">In Progress</em><b>Course</b></footer></article>
-      <article class="archive-card" data-category="Leadership" data-search="leadership"><div class="archive-mark">LD</div><span>Leadership</span><h2 data-archive-i18n="leadershipArchiveTitle">سجل القيادة والتطوع</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="planned">Planned</em><b>Program</b></footer></article>
-      <article class="archive-card" data-category="Entrepreneurship" data-search="entrepreneurship business"><div class="archive-mark">EN</div><span>Entrepreneurship</span><h2 data-archive-i18n="entrepreneurTitle">سجل ريادة الأعمال</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="planned">Planned</em><b>Camp</b></footer></article>
-      <article class="archive-card" data-category="Languages" data-search="languages english german arabic"><div class="archive-mark">LA</div><span>Languages</span><h2 data-archive-i18n="languagesArchiveTitle">سجل تعلم اللغات</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="progress">In Progress</em><b>Learning Record</b></footer></article>
-      <article class="archive-card" data-category="Other" data-search="future other learning"><div class="archive-mark">+</div><span>Other</span><h2 data-archive-i18n="futureTitle">سجل تعلم مستقبلي</h2><p data-archive-i18n="futureProvider">سيُضاف مقدم البرنامج والتاريخ عند توفرهما.</p><footer><em data-archive-i18n="planned">Planned</em><b>Future Record</b></footer></article>
     </section>
     <p class="archive-empty" id="archiveEmpty" hidden data-archive-i18n="empty">لا توجد سجلات مطابقة حاليًا.</p>
   </main>

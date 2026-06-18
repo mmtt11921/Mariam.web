@@ -118,7 +118,7 @@
     if (!text) return { topic: "unknown", confidence: 0, alternatives: [] };
     const mentionsQ = /\bq\b/.test(text) || includesAlias(text, config.qLegacyAlias) || includesAlias(text, config.qLegacyArabicAlias);
     if (mentionsQ && config.qConceptTerms.some(term => includesAlias(text, term))) return { topic: "qConceptPrivate", confidence: 100, alternatives: [] };
-    if (mentionsQ || ["what is future venture", "وش المشروع القادم", "وش المشروع المستقبلي"].some(phrase => includesAlias(text, phrase))) {
+    if (mentionsQ || ["what is future venture", "what is your next venture", "next venture", "وش المشروع القادم", "وش المشروع المستقبلي"].some(phrase => includesAlias(text, phrase))) {
       return { topic: "confidential", confidence: 100, alternatives: [] };
     }
 
