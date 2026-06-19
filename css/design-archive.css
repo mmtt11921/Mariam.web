@@ -384,6 +384,86 @@ blockquote { border-inline-start: 2px solid var(--gold); color: var(--soft); fon
 @media(max-width:900px){.case-hero,.split-case,.case-insights{grid-template-columns:1fr}.case-foundation-grid,.case-placeholder-grid,.campaign-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.sabah-case-study{padding:22px}.case-placeholder-grid,.case-foundation-grid,.campaign-grid{grid-template-columns:1fr}.case-hero h2{font-size:42px}}
 
+.educational-gallery figure img{object-position:center top}
+.expressive-gallery figure img,.educational-gallery figure img{height:100%;object-fit:cover;width:100%}
+
+/* Field rooms: each industry opens into its own curated space */
+.sector-grid .sector-card{
+  color:inherit;
+  text-decoration:none;
+}
+.sector-grid .sector-card strong{
+  display:block;
+}
+.archive-room{
+  scroll-margin-top:94px;
+}
+.archive-placeholder-grid{
+  display:grid;
+  gap:16px;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.archive-placeholder-grid article{
+  background:
+    radial-gradient(circle at 80% 18%, rgba(201,165,92,.13), transparent 34%),
+    linear-gradient(145deg, rgba(255,249,238,.052), rgba(255,249,238,.015));
+  border:1px solid rgba(240,215,154,.15);
+  border-radius:24px;
+  min-height:230px;
+  overflow:hidden;
+  padding:22px;
+  position:relative;
+}
+.archive-placeholder-grid article::before{
+  border:1px solid rgba(240,215,154,.11);
+  border-radius:50%;
+  content:"";
+  height:150px;
+  left:22px;
+  opacity:.7;
+  position:absolute;
+  top:24px;
+  width:150px;
+}
+.archive-placeholder-grid article::after{
+  background:linear-gradient(90deg,transparent,rgba(240,215,154,.16),transparent);
+  bottom:68px;
+  content:"";
+  height:1px;
+  left:22px;
+  position:absolute;
+  right:22px;
+}
+.archive-placeholder-grid span{
+  color:var(--gold);
+  display:block;
+  font:900 10px/1.4 Manrope,sans-serif;
+  letter-spacing:.04em;
+  margin-bottom:70px;
+  position:relative;
+  z-index:1;
+}
+.archive-placeholder-grid strong{
+  color:var(--text);
+  display:block;
+  font-size:18px;
+  line-height:1.5;
+  margin-bottom:8px;
+  position:relative;
+  z-index:1;
+}
+.archive-placeholder-grid p{
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.8;
+  margin:0;
+  position:relative;
+  z-index:1;
+}
+@media(max-width:850px){
+  .archive-placeholder-grid{grid-template-columns:1fr}
+}
+
 
 /* Curated portfolio additions */
 .curated-grid{grid-template-columns:1fr;gap:28px;}
