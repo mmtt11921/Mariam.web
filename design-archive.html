@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/design-archive.css?v=20260620-archive-polish">
+  <link rel="stylesheet" href="css/design-archive.css?v=20260620-design-basket">
 </head>
 <body>
   <div class="archive-film" aria-hidden="true"></div>
@@ -68,6 +68,35 @@
       <p class="eyebrow">Design Sectors</p>
       <h2 data-ar="كل مجال له لغة بصرية مختلفة." data-en="Every sector has its own visual language.">كل مجال له لغة بصرية مختلفة.</h2>
       <p data-ar="في المجال الصحي الأولوية للثقة والوضوح. في المطاعم تُبنى الرغبة من الصورة والقائمة. في الفنادق تُترجم الفخامة إلى هدوء وتفاصيل. وفي القانون تصبح المصداقية والرصانة أساس الهوية." data-en="Healthcare prioritizes trust and clarity. Restaurants build desire through imagery and menus. Hotels translate luxury into calm details. Legal design relies on credibility and restraint.">في المجال الصحي الأولوية للثقة والوضوح. في المطاعم تُبنى الرغبة من الصورة والقائمة. في الفنادق تُترجم الفخامة إلى هدوء وتفاصيل. وفي القانون تصبح المصداقية والرصانة أساس الهوية.</p>
+    </section>
+
+    <section class="design-basket reveal" id="design-basket" aria-labelledby="designBasketTitle">
+      <div class="basket-copy">
+        <p class="eyebrow" data-ar="سلة تصاميمي" data-en="My Design Basket">سلة تصاميمي</p>
+        <h2 id="designBasketTitle" data-ar="أعمالي البصرية في مكان واحد." data-en="My visual work in one curated place.">أعمالي البصرية في مكان واحد.</h2>
+        <p data-ar="هذا المدخل مخصص للتصاميم العادية والتجريبية بعيدًا عن أقسام المجالات. افتحي السلة، اختاري النوع، ثم استعرضي الأعمال بالحجم الكامل." data-en="This entry is dedicated to regular and experimental designs, separate from the industry sections. Open the basket, choose a type, and view the work in full size.">هذا المدخل مخصص للتصاميم العادية والتجريبية بعيدًا عن أقسام المجالات. افتحي السلة، اختاري النوع، ثم استعرضي الأعمال بالحجم الكامل.</p>
+        <button class="basket-toggle" id="designBasketToggle" type="button" aria-expanded="false" aria-controls="designBasketDrawer">
+          <span>✦</span>
+          <b data-ar="افتحي سلة التصاميم" data-en="Open design basket">افتحي سلة التصاميم</b>
+        </button>
+      </div>
+      <button class="basket-visual" type="button" aria-label="Open design basket" data-basket-open>
+        <span class="basket-glow"></span>
+        <figure class="basket-card basket-card-one"><img src="assets/images/design-portfolio/ocean-in-the-cup.jpg" alt="The Ocean in the Cup design preview"></figure>
+        <figure class="basket-card basket-card-two"><img src="assets/images/design-portfolio/sea-turtle-educational.jpg" alt="Educational design preview"></figure>
+        <figure class="basket-card basket-card-three"><img src="assets/images/design-portfolio/sapiens-poster.png" alt="Learning design preview"></figure>
+        <div class="basket-label">
+          <small data-ar="اختاري المجموعة" data-en="Choose a collection">اختاري المجموعة</small>
+          <strong data-ar="Design Basket" data-en="Design Basket">Design Basket</strong>
+        </div>
+      </button>
+      <div class="basket-drawer" id="designBasketDrawer" hidden>
+        <a class="basket-choice" href="#conceptual-art"><span>01</span><strong data-ar="التصاميم التعبيرية" data-en="Expressive Designs">التصاميم التعبيرية</strong><em data-ar="معنى، رمز، ومشاعر بصرية" data-en="Meaning, symbolism, and visual emotion">معنى، رمز، ومشاعر بصرية</em></a>
+        <a class="basket-choice" href="#educational-visuals"><span>02</span><strong data-ar="التصاميم التعليمية" data-en="Educational Visuals">التصاميم التعليمية</strong><em data-ar="معلومة قصيرة بتكوين واضح" data-en="Short knowledge in clear composition">معلومة قصيرة بتكوين واضح</em></a>
+        <a class="basket-choice" href="#learning-design"><span>03</span><strong data-ar="التعلم والمعرفة" data-en="Learning & Knowledge">التعلم والمعرفة</strong><em data-ar="قراءة ومفاهيم تتحول إلى مشاهد" data-en="Reading and concepts as visuals">قراءة ومفاهيم تتحول إلى مشاهد</em></a>
+        <a class="basket-choice" href="#friday-cultural"><span>04</span><strong data-ar="المناسبات والرسائل" data-en="Seasonal & Cultural">المناسبات والرسائل</strong><em data-ar="تصاميم هادئة للمناسبات" data-en="Quiet designs for occasions">تصاميم هادئة للمناسبات</em></a>
+        <a class="basket-choice" href="#ruqi-design"><span>05</span><strong data-ar="اتجاهات الهوية" data-en="Brand Directions">اتجاهات الهوية</strong><em data-ar="علامات وهوية قيد التطوير" data-en="Identity directions in progress">علامات وهوية قيد التطوير</em></a>
+      </div>
     </section>
 
     <section class="industry-card-stack reveal design-panel is-active" id="healthcare">
@@ -334,11 +363,23 @@
       }
     }), { threshold: .12 });
     document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+    const basketToggle = document.getElementById("designBasketToggle");
+    const basketDrawer = document.getElementById("designBasketDrawer");
+    function openDesignBasket() {
+      if (!basketToggle || !basketDrawer) return;
+      basketDrawer.hidden = false;
+      basketToggle.setAttribute("aria-expanded", "true");
+      basketDrawer.classList.add("is-open");
+    }
+    basketToggle?.addEventListener("click", openDesignBasket);
+    document.querySelectorAll("[data-basket-open]").forEach(button => button.addEventListener("click", openDesignBasket));
+    document.querySelectorAll(".basket-choice").forEach(link => link.addEventListener("click", openDesignBasket));
+
     const sectorGridContainer = document.querySelector(".sector-grid");
     const healthcarePanel = document.getElementById("healthcare");
     if (sectorGridContainer && healthcarePanel) sectorGridContainer.after(healthcarePanel);
     const designPanels = Array.from(document.querySelectorAll(".design-panel"));
-    const designPanelLinks = Array.from(document.querySelectorAll(".industry-nav a[href^='#'], .sector-grid a[href^='#']"));
+    const designPanelLinks = Array.from(document.querySelectorAll(".industry-nav a[href^='#'], .sector-grid a[href^='#'], .basket-choice[href^='#']"));
     function showDesignPanel(targetId, shouldScroll = true) {
       const target = document.getElementById(targetId);
       if (!target || !target.classList.contains("design-panel")) return;

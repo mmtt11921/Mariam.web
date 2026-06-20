@@ -1051,3 +1051,121 @@ body[dir="ltr"] .archive-hero h1{
 /* V5 active state compatibility */
 .industry-nav a.is-active,.sector-card.is-active{background:rgba(201,165,92,.18);border-color:rgba(240,215,154,.42);color:#f2d991}
 .sector-card.is-active{box-shadow:0 24px 82px rgba(201,165,92,.13),0 26px 90px rgba(0,0,0,.28);transform:translateY(-3px)}
+
+
+/* V6 design basket: curated entry for Mariam's own designs */
+.design-basket{
+  align-items:center;
+  background:
+    radial-gradient(circle at 78% 18%,rgba(240,215,154,.16),transparent 31%),
+    radial-gradient(circle at 18% 10%,rgba(90,18,34,.42),transparent 34%),
+    linear-gradient(145deg,rgba(37,7,15,.86),rgba(6,3,4,.92));
+  border:1px solid rgba(240,215,154,.16);
+  border-radius:36px;
+  box-shadow:0 36px 120px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.04);
+  display:grid;
+  gap:clamp(24px,4vw,52px);
+  grid-template-columns:minmax(0,.88fr) minmax(340px,1.12fr);
+  margin:0 auto 36px;
+  max-width:1180px;
+  overflow:hidden;
+  padding:clamp(24px,4vw,48px);
+  position:relative;
+}
+.design-basket:before{
+  background:linear-gradient(120deg,transparent,rgba(240,215,154,.08),transparent);
+  content:"";
+  height:180%;
+  left:-45%;
+  position:absolute;
+  top:-42%;
+  transform:rotate(16deg);
+  width:34%;
+}
+.basket-copy,.basket-visual,.basket-drawer{position:relative;z-index:1}
+.basket-copy h2{
+  font-size:clamp(38px,5.4vw,76px);
+  letter-spacing:-.06em;
+  line-height:1.05;
+  margin:10px 0 16px;
+}
+.basket-copy p{color:rgba(255,255,255,.68);font-size:12px;line-height:2;margin:0;max-width:560px}
+.basket-toggle{
+  align-items:center;
+  background:linear-gradient(135deg,#f2d991,#c79b4a);
+  border:0;
+  border-radius:18px;
+  box-shadow:0 18px 56px rgba(201,165,92,.22);
+  color:#170705;
+  cursor:pointer;
+  display:inline-flex;
+  gap:10px;
+  font:900 13px/1 "Noto Kufi Arabic",Manrope,sans-serif;
+  margin-top:24px;
+  padding:16px 22px;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.basket-toggle:hover{box-shadow:0 26px 80px rgba(201,165,92,.28);transform:translateY(-3px)}
+.basket-visual{
+  background:linear-gradient(145deg,rgba(255,249,238,.045),rgba(255,249,238,.012));
+  border:1px solid rgba(240,215,154,.14);
+  border-radius:34px;
+  cursor:pointer;
+  min-height:440px;
+  overflow:hidden;
+  position:relative;
+}
+.basket-glow{background:radial-gradient(circle,rgba(240,215,154,.22),transparent 62%);height:360px;left:50%;position:absolute;top:50%;transform:translate(-50%,-50%);width:360px}
+.basket-card{
+  background:#100607;
+  border:1px solid rgba(240,215,154,.2);
+  border-radius:24px;
+  box-shadow:0 32px 90px rgba(0,0,0,.44);
+  margin:0;
+  overflow:hidden;
+  position:absolute;
+}
+.basket-card img{display:block;height:100%;object-fit:cover;width:100%}
+.basket-card-one{height:300px;right:10%;top:52px;transform:rotate(7deg);width:220px;z-index:3}
+.basket-card-two{height:260px;right:34%;top:112px;transform:rotate(-10deg);width:190px;z-index:2}
+.basket-card-three{height:230px;right:2%;top:148px;transform:rotate(16deg);width:170px;z-index:1}
+.basket-label{
+  background:rgba(6,3,4,.72);
+  border:1px solid rgba(240,215,154,.18);
+  border-radius:22px;
+  bottom:26px;
+  left:26px;
+  padding:16px 18px;
+  position:absolute;
+  text-align:start;
+  z-index:4;
+}
+.basket-label small{color:var(--gold);display:block;font:800 9px/1 Manrope,sans-serif;margin-bottom:8px;text-transform:uppercase}.basket-label strong{font-size:24px}
+.basket-drawer{
+  display:grid;
+  gap:12px;
+  grid-column:1/-1;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  transform:translateY(-8px);
+  transition:max-height .45s ease,opacity .35s ease,transform .35s ease;
+}
+.basket-drawer.is-open{max-height:420px;opacity:1;transform:translateY(0)}
+.basket-choice{
+  background:rgba(255,249,238,.045);
+  border:1px solid rgba(240,215,154,.14);
+  border-radius:22px;
+  color:#fff;
+  display:grid;
+  gap:10px;
+  min-height:150px;
+  padding:18px;
+  text-decoration:none;
+  transition:transform .25s ease,border-color .25s ease,background .25s ease;
+}
+.basket-choice:hover,.basket-choice.is-active{background:rgba(201,165,92,.12);border-color:rgba(240,215,154,.38);transform:translateY(-4px)}
+.basket-choice span{align-items:center;border:1px solid rgba(240,215,154,.2);border-radius:50%;color:#f2d991;display:flex;font:900 10px/1 Manrope,sans-serif;height:36px;justify-content:center;width:36px}.basket-choice strong{font-size:15px}.basket-choice em{color:rgba(255,255,255,.58);font-size:9px;font-style:normal;line-height:1.8}
+@media(max-width:980px){.design-basket{grid-template-columns:1fr}.basket-visual{min-height:390px}.basket-drawer{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.design-basket{border-radius:24px;padding:20px}.basket-copy h2{font-size:36px}.basket-visual{min-height:330px}.basket-card-one{height:235px;right:18%;top:42px;width:170px}.basket-card-two{height:205px;right:42%;top:92px;width:145px}.basket-card-three{height:190px;right:3%;top:128px;width:132px}.basket-label{bottom:16px;left:16px}.basket-drawer{grid-template-columns:1fr}.basket-drawer.is-open{max-height:900px}}
